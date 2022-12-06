@@ -1,0 +1,20 @@
+{
+   
+   "window.zoomLevel": 2,
+   "editor.mouseWheelZoom": true,
+   "editor.tabSize": 3,
+   //style.css.map 생성 안하겠다.
+   "liveSassCompile.settings.generateMap": false,
+
+   //style.css 저장경로(path) 초기화(Format) 설정(Settings)
+   "liveSassCompile.settings.formats": [
+       {
+           "format": "expanded",     //스타일 초기화 확장ed 과겅형 추가
+           "extensionName": ".css", //확장자(파일의 형식)
+           "savePath":"~/../css"    //저장경로 savePath 폴더
+      }
+   ],
+   "editor.minimap.enabled": false
+    
+  
+}

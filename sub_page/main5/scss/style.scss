@@ -1,0 +1,322 @@
+@import url(../../../css/fonts.css);
+@import url(../../../css/reset.css);
+@import url(../../../css/modal.css);
+@import url(../../../css/header.css);
+@import url(../../../css/footer.css);
+
+
+#main {
+   text-align: center;
+   font-size: 30px;
+   line-height: 200%;
+   height: auto;
+   margin-bottom: 80px;
+   #section1 {
+      width:100%;
+      padding: 100px 0;
+   .slide-container {
+   width: 1140px;
+   margin: 0 auto;
+   .slide-view {
+      .slide-wrap {
+          .slide {
+              position: relative;
+              text-align: center;
+              .gap {
+                  a {
+                      h1 {}
+                      br {}
+                      h1 {}
+                  }
+              }
+          }
+      }
+   }
+   }
+   }
+   #section2 {
+      width:100%;
+      padding:24px 0 100px;
+      margin: 0 295px 0 0;
+      .in-img-banner {
+          position: relative;
+          width: 1140px;
+          margin: 0 auto;
+          .img_banner {
+              .scope{
+                  a {
+                      color: #111;
+                      img {
+                          width: 100%;
+                          height: 340px;
+                      }
+                  }
+              }
+          }
+      }
+      .in-corner {
+          position: relative;
+          padding: 65px 0 0;
+          background: #fff;
+          width: 1140px;
+          margin: 0 auto;
+          overflow: hidden;
+          .col2 {
+              margin: 0 -15px;
+              .scope2 {
+                  padding: 0 15px;
+                  float: left;
+                  width: 50%;
+                  a {
+                      position: relative;
+                      display: block;
+                      color: #111;
+                      cursor: pointer;
+                      .thumb {
+                          display: block;
+                          img {
+                              width: 100%;
+                              height: 100%;
+                          }
+                      }
+                  }
+              }
+              .scope2 {
+                  padding: 0 15px;
+                  float: left;
+                  width: 50%;
+                  a {
+                      position: relative;
+                      display: block;
+                      color: #111;
+                      cursor: pointer;
+                      .thumb {
+                          display: block;
+                          img {
+                              width: 100%;
+                              height: 100%;
+                          }
+                      }
+                  }
+              }
+          }
+      }
+  }
+  #section3 {
+   width:100%;
+   padding: 20px 0px;
+   .slide-container {
+       width: 1140px;
+       margin: 0 auto;
+       .slide-view {
+           .slide-wrap{
+
+               .slide {
+                   position: relative;
+                   text-align: center;
+                   .gap {
+                       
+                       a {
+                       h1 {
+
+                       }
+                       br {}
+                       h1 {}
+                       }
+                   }
+               }
+           }
+       }
+   }
+
+}
+#section4 {
+   .slide-container {
+       .slide-wrap {
+           width: 1140px;
+           position: relative;
+           margin: 0 auto;
+           display: flex;
+           justify-content: center;
+           .slide {
+               margin-top: 28px;
+               padding: 0 15px;
+               list-style: none;
+               .gap {
+                   a {
+                       position: relative;
+                       display: block;
+                       span {
+                           width: 360px;
+                           height: 220px;
+                           img {
+                               
+                           }
+                       }
+                       .imgtit {
+                           background: rgba(255,255,255,.5);
+                           color: #111;
+                           position: absolute;
+                           bottom: 0;
+                           left: 0;
+                           right: 0;
+                           height: 80px;
+                           padding: 18px 20px 0;
+                           color: #fff;
+                           line-height: 20px;
+                           text-align: left;
+                       
+                           strong {
+                               height: 20px;
+                               margin-bottom: 7px;
+                               font-size: 18px;
+                               font-weight: 700;
+                           }
+                           p {
+                               height: 18px;
+                               font-size: 14px;
+                               line-height: 18px;
+                           }
+                       }
+
+                   }
+               }
+           }
+           .slide {
+               margin-top: 28px;
+               padding: 0 15px;
+               .gap {
+                   a {
+                       position: relative;
+                       display: block;
+                       span {
+                           width: 360px;
+                           height: 220px;
+                           img {
+                               
+                           }
+                       }
+                       .imgtit {
+                           position: absolute;
+                           height: 70px;
+                           padding: 13px 10px 0;
+                           color: #fff;
+                           line-height: 20px;
+                           text-align: center;
+                           background: rgba(0,0,0,.5);
+                           display: block;
+                           strong {
+                               height: 20px;
+                               margin-bottom: 7px;
+                               font-size: 18px;
+                               font-weight: 700;
+                           }
+                           p {
+                               height: 18px;
+                               font-size: 14px;
+                               line-height: 18px;
+                           }
+                       }
+
+                   }
+               }
+           }
+           .slide {
+               margin-top: 28px;
+               padding: 0 15px;
+               .gap {
+                   a {
+                       position: relative;
+                       display: block;
+                       span {
+                           width: 360px;
+                           height: 220px;
+                           img {
+                               
+                           }
+                       }
+                       .imgtit {
+                           position: absolute;
+                           height: 70px;
+                           padding: 13px 10px 0;
+                           color: #fff;
+                           line-height: 20px;
+                           text-align: center;
+                           background: rgba(0,0,0,.5);
+                           display: block;
+                           strong {
+                               height: 20px;
+                               margin-bottom: 7px;
+                               font-size: 18px;
+                               font-weight: 700;
+                           }
+                           p {
+                               height: 18px;
+                               font-size: 14px;
+                               line-height: 18px;
+                           }
+                       }
+
+                   }
+               }
+           }
+       }
+   }
+}
+#section5 {
+   .slide-container {
+       .slide-wrap {
+           width: 1140px;
+           position: relative;
+           margin: 0 auto;
+           display: flex;
+           justify-content: center;
+           margin-right: 550px;
+           .slide {
+               margin-top: 28px;
+               padding: 0 15px;
+               list-style: none;
+               .gap {
+                   a {
+                       position: relative;
+                       display: block;
+                       
+                       span {
+                           width: 360px;
+                           height: 220px;
+                           
+                           img {
+                               
+                           }
+                       }
+                       .imgtit {
+                           background: rgba(0, 0, 0, 0.5);
+                           position: absolute;
+                           bottom: 0;
+                           left: 0;
+                           right: 0;
+                           height: 80px;
+                           padding: 18px 20px 0;
+                           color: #fff;
+                           line-height: 20px;
+                           text-align: center;
+                           strong {
+                               height: 20px;
+                               margin-bottom: 7px;
+                               font-size: 18px;
+                               font-weight: 700;
+                           }
+                           p {
+                               height: 18px;
+                               font-size: 14px;
+                               line-height: 18px;
+                           }
+                       }
+
+                   }
+               }
+           }
+       }
+   }
+}
+}

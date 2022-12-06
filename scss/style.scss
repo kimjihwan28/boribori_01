@@ -1,0 +1,2535 @@
+@charset "UTF-8";
+@import url(./fonts.css);
+@import url(./reset.css);
+@import url(./header.css);
+#wrap {
+    width:100%;position:relative;
+    #modal {
+        width:100%;height:70px;background:rgb(255, 223, 226);
+        .container {
+            width:1140px;
+            height:100%;
+            margin: 0 auto;
+            position: relative;
+            a {
+                z-index: 1;
+                position: relative;
+                display: table-cell;
+                width:100%;
+                height:100%;
+            }
+            button {
+                position:absolute ;
+                top: 21px;
+                right: 0;
+                width:28px;
+                height: 28px;
+                z-index: 2;
+                border: 0;
+                background:none;
+                cursor: pointer;
+                img {
+                    width: 100%;
+                }
+            }
+        }
+    }
+    #header {
+        position: relative;
+        z-index: 3;
+        height:120px;
+        padding-bottom: 24px;
+        .row1 {
+            width: 100%;
+            .row1-1 {
+                width:1140px;
+                height:40px;
+                display: flex;
+                align-items: center;
+                font-size:12px;
+                margin:0 auto;
+                .row1-left {
+                    width:100%;
+                    margin:0 auto;
+                    a {
+                        color:#707070;
+                        cursor: pointer;
+                            strong{
+                                color:#8d99ed;
+                                font-size:12px;
+                        }
+                    }
+                    i {
+                        color: #707070;
+                        user-select: none;
+                    }
+                }
+                .row1-right {
+                    width:100%;
+                    height:40px; 
+                    a {
+                        display: flex;
+                        align-items: center;
+                        float: right;
+                        font-size:12px;
+                        height: 40px;
+                        line-height: 40px;
+                        margin-left: 20px;
+                        color:#707070;
+                        cursor: pointer;
+                    }
+                }
+            }
+            .row1-2 {
+                width:1140px;
+                margin: 0 auto;
+                height:120px; 
+                display: flex;
+                justify-content: space-between;
+                padding-bottom: 24px;
+                .left {
+                    display: flex;
+                    align-items: center;
+                    height: 67px;
+                }
+                .center {
+                    position: relative;
+                    width: 450px;
+                    height: 100%;
+                    margin: 0 auto;
+                    padding: 28px 0 0;
+                    input {
+                        margin-top: -14px;
+                        width:100%;
+                        height:40px;
+                        padding: 10px 50px 10px 20px;
+                        background:rgba(253,209,55,.3);
+                        border: 1px solid rgba(253,209,55,.3);
+                        color: #111;
+                        border-radius:25px;
+                        font-size: 14px;
+                        line-height: normal;
+                        &:focus {
+                            outline: 0;
+                        }
+                    }
+                    a {
+                        z-index: 2;
+                        position:absolute;
+                        top:24px;
+                        right:15px;
+                        display: flex;
+                        width:20px;
+                        height:20px;
+                        align-items: center;
+                        justify-content: center;
+                        background: rgba(253,209,55,.3);
+                        border-radius: 5px;
+                        img {
+                            width:20px;
+                        }
+                    }
+                }
+                .right {
+                    position: relative;
+                    z-index: 2;
+                    right: 0;
+                    top: 10px;
+                    overflow: hidden;
+                    width: 240px;
+                    height: 67px;
+                    .slide-wrap{
+                        position: relative;
+                        width:calc(240px*6);
+                        .slide{
+                            width: 240px;
+                            i {
+                                img {
+                                    height: 67px;
+                                    border: 0;
+                                    max-width: 100%;
+                                }
+                            }
+                        }
+                    }
+                    }
+
+                    
+                }
+                .swiper-button1 {
+                    margin-top: -11px;
+                    background: url(../img/arrw_hbanner_top.png);
+                    left: auto;
+                    right: 1px;
+                    top: 50%;
+                    width: 10px;
+                    height: 6px;
+                    
+                }
+                .swiper-button2 {
+                    margin-top: 11px;
+                    left: auto;
+                    right: 1px;
+                    top: 50%;
+                    width: 10px;
+                    height: 6px;
+                    background: url(../img/arrw_hbanner_bottom.png);
+                }
+            }
+        }
+        .row2 {
+            position: absolute;
+            height:48px;
+            left: 0;
+            right: 0;
+            margin-top: -40px;     
+
+
+            .row2-container {
+                width:1140px;
+                border-radius: 4px;
+                background: #fff;
+                box-shadow: 0 5px 5px rgb(0 0 0 / 10%);
+                margin: 0 auto;
+                display: flex;
+                align-items: center;
+                .left {
+                    position: relative;
+                    float: left;
+                    width: 180px;
+                    height: 48px;
+                    margin: -1px 0 0 -1px;
+                    background: #fdd137;
+                    text-align: center;
+                    border-radius: 4px 0 0 4px;
+                    a {
+                        display: block;
+                        color: #111;
+                        padding: 0 20px;
+                        line-height: 48px;
+                        font-size: 16px;
+                        cursor: pointer;
+                        text-align: left;
+                        img {
+                            width: 18px;
+                            height: 18px;
+                            margin-right: 20px;
+                        }
+                    }
+                    .open-menu {
+                        display: block;
+                        display: none;
+                        position: absolute;
+                        left: 0;
+                        right: 0;
+                        top: 100%;
+                        height: 650px;
+                        padding: 8px 0;
+                        font-size: 14px;
+                        font-weight: 400;
+                        text-align: left;
+                        border-left: 1px solid #fdd137;
+                        border-bottom: 1px solid #fdd137;
+                        background: #fef1c3;
+                        z-index: 2;
+                        .scope1 {
+                            hr {
+                                display: block;
+                                height: 1px;
+                                margin: 3px 10px;
+                                background: #fdd137;
+                                box-sizing: content-box;
+                                height: 0;
+                            }
+                        }
+                        .scope2 {
+                            hr {
+                                display: block;
+                                height: 1px;
+                                margin: 3px 10px;
+                                background: #fdd137;
+                                box-sizing: content-box;
+                                height: 0;
+                            }
+                        }
+                    }
+                }
+
+                // 왼쪽 정렬
+                    .gnb_list {
+                        float: left;
+                        height: 46px;
+                        padding: 0 15px;
+                        display: block;
+                        li {
+                            float: left;
+                            padding: 0 15px;
+                        }
+                        a {
+                            position: relative;
+                            display: inline-block;
+                            line-height: 46px;
+                            font-size: 16px;
+                            color: #111;
+
+                        }
+                    }
+
+                    
+                .right {//오른쪽 정렬
+                    position: relative;
+                    float: right;
+                    border-radius: 0 4px 4px 0;
+                    display: flex;
+                    color: #111;
+                    height: 47px;
+                    margin: -1px 0 0 0;
+                    line-height: 47px;
+                    font-size: 16px;
+                    text-align: center;
+                    cursor: pointer;
+                    .item {
+                        
+                        width: 120px;
+                        float: right;
+                        span {
+                            i {
+                                img {
+                                    width: 15px;
+                                    height: 15px;
+                                    margin-right: 10px;
+                                }
+                            }
+                        }
+                    }
+                    .brand {
+                        width: 120px;
+                        span {
+                            i {
+                                img {
+                                    width: 15px;
+                                    height: 15px;
+                                    margin-right: 10px;
+                                }
+                            }
+
+                        }
+                    }
+                }
+            }
+
+        }
+    }
+    #main {
+        position: relative;
+        z-index: 2;
+        width:100%;
+        #section1 {
+            width:100%;
+            padding: 0;
+            height: 506px;
+            .slide-container {
+                position: relative;
+                width: 100%;
+                height: 506px;
+                .side-view {
+                    position: relative;
+                    width: 100%;
+                    overflow: visible;
+                    height: 506px;
+                    .slide-wrap {
+                        position: relative;
+                        width: 100% * 15;
+                        margin:0 0 0 -100%;
+                        display:flex;
+                        height: 506px;                        
+                        .slide {
+                            width: 100%;
+                            height: 506px;
+                            a {
+                                display: block;
+                                width: 100%;
+                                height: 90%;                                
+                                background:rgb(235, 237, 236);                                                     
+                                span {
+                                    display: block;
+                                    width: 960px;
+                                    height: 100%;
+                                    margin:0 auto;
+                                    background: url(../img/disp_corner_conts_02.jpg) no-repeat 50% 50%;
+                                    background-size:auto auto; 
+                                }
+                            }
+                            
+                            &.slide1 {
+                                a {
+                                    span {
+                                        background-image:url(../img/disp_corner_conts_01.jpg);
+                                    }                                    
+                                }                                
+                            }
+                            &.slide2 {
+                                a {
+                                    span {background-image:url(../img/disp_corner_conts_02.jpg);}
+                                }                                
+                            }
+                            &.slide3 {
+                                a {
+                                   span {background-image:url(../img/disp_corner_conts_03.jpg);}
+                                }                                
+                            }
+                            &.slide4 {
+                                a {
+                                    span {background-image:url(../img/disp_corner_conts_04.jpg);}
+                                }                                
+                            }
+                            &.slide5 {
+                                a {
+                                    span {background-image:url(../img/disp_corner_conts_05.jpg);}
+                                }                                 
+                            }
+                            &.slide6 {
+                                a {
+                                    span {background-image:url(../img/disp_corner_conts_06.jpg);}
+                                }                                
+                            }
+                            &.slide7 {
+                                a {
+                                    span {background-image:url(../img/disp_corner_conts_07.jpg);}
+                                }                                
+                            }
+                            &.slide8 {
+                                a {
+                                    span {background-image:url(../img/disp_corner_conts_08.jpg);}
+                                }                                
+                            }
+                            &.slide9 {
+                                a {
+                                    span {background-image:url(../img/disp_corner_conts_09.jpg);}
+                                }
+                            }
+                            &.slide10 {
+                                a {
+                                    span {
+                                        background-image:url(../img/disp_corner_conts_10_01.jpg), url(../img/disp_corner_conts_10_02.jpg);
+                                        background-position: 0 100%, 100% 100%, 
+                                    }
+                                }
+                            }
+                            &.slide11 {
+                                a {
+                                    span {background-image:url(../img/disp_corner_conts_11.jpg);}
+                                }
+                            }
+                            &.slide12 {
+                                a {
+                                    span {background-image:url(../img/disp_corner_conts_12.jpg);}
+                                }
+                            }
+                            &.slide13 {
+                                a {
+
+                                    span {
+                                        background-image:url(../img/disp_corner_conts_13_01.jpg), url(../img/disp_corner_conts_13_02.jpg);
+                                        background-position: 0 100%, 100% 100%, 
+                                    }
+
+                                }
+                            }
+                        }
+                    }
+                }
+                                /* 카운트 */
+                                .count-number-box {
+                                    z-index:2;
+                                    position: absolute;
+                                    bottom:20px;
+                                    right:23%;
+                                    display: flex;
+                                    align-items: center;
+                                    justify-content: center;
+                                    padding:0 13px;
+                                    width:auto;
+                                    height:23px;
+                                    color:#000;
+                                    background:rgba(0,0,0, .15);
+                                    border-radius:11.5px;
+                                    em {font-size:14px;font-weight:400;}
+                                    i {font-size:13px;margin:0 2px;}
+                                 }
+
+            }
+        }
+
+
+        #section2 {
+            position: relative;
+            background: #fff;
+            width: 1140px;
+            margin: 0 auto;
+            text-align: center;
+            .container {
+                width: 1140px;
+                margin: 0 auto;
+                .view {
+                   .wrap {
+                       .slide {
+                           position: relative;
+                           .gap {
+                               a {
+                                img {
+                                    
+                                }
+                               }
+                           }
+                       }
+                   }
+                }
+                }
+            .in-corner {
+                position: relative;
+                padding: 65px 0 0;
+                background: #fff;
+                width: 1140px;
+                margin: 0 auto;
+                overflow: hidden;
+                .col2 {
+                    margin: 0 -15px;
+                    .scope2 {
+                        padding: 0 15px;
+                        float: left;
+                        width: 50%;
+                        a {
+                            position: relative;
+                            display: block;
+                            color: #111;
+                            cursor: pointer;
+                            .thumb {
+                                display: flex;
+                                img {
+                                    width: 100%;
+                                    height: 100%;
+                                    margin: 0 auto;
+                                }
+                            }
+                        }
+                    }
+                    .scope2 {
+                        padding: 0 15px;
+                        width: 50%;
+                        a {
+                            position: relative;
+                            display: block;
+                            color: #111;
+                            cursor: pointer;
+                            .thumb {
+                                display: block;
+                                img {
+                                    width: 100%;
+                                    height: 100%;
+                                }
+                            }
+                        }
+                    }
+                }
+            }
+        }
+
+        #section3 {
+            width:100%;
+            padding: 24px 0;
+            .slide-container {
+                width: 1140px;
+                margin: 0 auto;
+                .slide-view {
+                    .slide-wrap {
+                        .slide {
+                            position: relative;
+                            text-align: center;
+                            .gap {
+                                a {
+                                    h1 {
+                                        
+                                        br {}
+                                    }
+                                    h1 {
+                                        
+                                    }
+                                }
+                            }
+                        }
+                    }
+                }
+            }
+        }
+
+
+    #section4 {
+        position: relative;
+        width: 100%;
+
+        .slide-container {
+
+            .slide-view {
+                .slide-wrap {
+                                width: 1140px;
+                                position: relative;
+                                margin: 0 auto;
+                                display: flex;
+                                justify-content: center;
+                                border-top: 1px solid #e8e8e9;
+                                border-bottom: 1px solid #e8e8e9;
+                    .slide {
+                        width: 100%;
+                        padding: 0;
+                        float: none;
+                        height: auto;
+                        padding-top: 20px;
+                        .gap {
+                            a {
+                                img {
+                                    
+                                }
+                            }
+                        }
+                    }
+                    .content {
+                        
+
+                        h5 {
+                            
+                            font-size: 14px;
+                            font-weight: 700;
+                            line-height: 120%;
+                            color: #333;
+                        }
+                        h4 {
+                            
+                            font-size: 14px;
+                            font-weight: 400;
+                        }
+                        h3 {
+                            s {
+                                font-size: 15px;
+                                font-weight: 400;
+                            }
+                        }
+                        p {
+                            em {
+                                color:#f33f46;
+                                font-size:24px;
+                                font-weight:400;
+                            }
+                            span {
+                                font-size:24px;
+                                font-weight:700;
+                                color:#111;
+                        }
+                        }
+                    }
+                    .slide {
+                        .gap {
+                            a {
+                                h1 {
+                                    text-align: center;
+                                    font-size: 28px;
+                                    font-weight: 400;
+                                }
+                            }
+                        }
+                    }
+                    .content {
+                        h5 {
+                            font-size: 14px;
+                            font-weight: 700;
+                        }
+                        h4 {
+                            font-size: 14px;
+                            font-weight: 400;
+                        }
+                        h3 {
+                            s {
+                                font-size: 15px;
+                                font-weight: 400;
+                            }
+                        }
+                        p {
+                            em {
+                                color:#f33f46;
+                                font-size:24px;
+                                font-weight:400;
+                            }
+                            span {
+                                font-size:24px;
+                                font-weight:700;
+                                color:#111;
+                        }
+                        span {
+                            font-size: 16px;
+                            color: #111;
+                            font-weight: 700;
+                        }
+                        }
+                    }
+                    .slide {
+                        .gap {
+                            a {
+                                h1 {
+                                    text-align: center;
+                                    font-size: 28px;
+                                    font-weight: 400;
+                                }
+                            }
+                        }
+                    }
+                    .content {
+                        h5 {
+                            font-size: 14px;
+                            font-weight: 700;
+                        }
+                        h4 {
+                            font-size: 14px;
+                            font-weight: 400;
+                        }
+                        h3 {
+                            s {
+                                font-size: 15px;
+                                font-weight: 400;
+                            }
+                        }
+                        p {
+                            em {
+                                color:#f33f46;
+                                font-size:24px;
+                                font-weight:400;
+                            }
+                            span {
+                                font-size:24px;
+                                font-weight:700;
+                                color:#111;
+                        }
+                        span {
+                            font-size: 16px;
+                            color: #111;
+                            font-weight: 700;
+                        }
+                        }
+                    }
+                }
+            }
+        }
+
+    }
+    #section5 { 
+        .slide-container {
+            .slide-view {
+                .slide-wrap{
+                    width: 1140px;
+                    position: relative;
+                    margin: 0 auto;
+                    display: flex;
+                    justify-content: center;
+                    border-top: 1px solid #e8e8e9;
+                    border-bottom: 1px solid #e8e8e9;
+                    padding: 45px 0;
+                    .slide {
+                        width: 100%;
+                        padding: 0;
+                        float: none;
+                        height: auto;
+                        padding-top: 20px;
+                        .gap {
+                            a {
+                                h1 {
+                                    text-align: center;
+                                    font-size: 28px;
+                                    font-weight: 400;
+                                }
+                            }
+                        }
+                    }
+                    .content {
+                        h5 {
+                            font-size: 14px;
+                            font-weight: 700;
+                        }
+                        h4 {
+                            font-size: 14px;
+                            font-weight: 400;
+                        }
+                        h3 {
+                            s {
+                                font-size: 15px;
+                                font-weight: 400;
+                            }
+                        }
+                        p {
+                            em {
+                                color:#f33f46;
+                                font-size:24px;
+                                font-weight:400;
+                            }
+                            span {
+                                font-size:24px;
+                                font-weight:700;
+                                color:#111;
+                        }
+                        span {
+                            font-size: 16px;
+                            color: #111;
+                            font-weight: 700;
+                        }
+                        }
+                        button {
+                            height: 20px;
+                            font-size: 12px;
+                            border: 1px solid #d0d0d0;
+                            background: #f7f7f7;
+                            text-align: center;
+                            color: #959595;
+                        }
+                    }
+                }
+            }
+        }
+
+    }
+
+    
+
+            #section6 {
+                width:100%;
+                padding: 24px 0;
+                .slide-container {
+                    width: 1140px;
+                    margin: 0 auto;
+                    .slide-view {
+                        .slide-wrap{
+
+                            .slide {
+                                position: relative;
+                                text-align: center;
+                                .gap {
+                                    
+                                    a {
+                                    h1 {
+
+                                    }
+                                    br {}
+                                    h1 {}
+                                    }
+                                }
+                            }
+                        }
+                    }
+                }
+            
+            }
+    }
+
+    #section7 {
+        .slide-container {
+            .slide-wrap {
+                width: 1140px;
+                position: relative;
+                margin: 0 auto;
+                display: flex;
+                justify-content: center;
+                .slide{
+                    margin-top: 28px;
+                    padding: 0 15px;
+                    list-style:none;
+                    .gap {
+                        a {
+                            position: relative;
+                            display: block;
+                            span {
+                                width: 360px;
+                                height: 220px;
+                                img {
+                                    
+                                }
+                            }
+                            .imgtit {
+                                background: rgba(255,255,255,.5);
+                                color: #111;
+                                position: absolute;
+                                bottom: 0;
+                                left: 0;
+                                right: 0;
+                                height: 80px;
+                                padding: 18px 20px 0;
+                                color: #fff;
+                                line-height: 20px;
+                                text-align: left;
+                                strong {
+                                    height: 20px;
+                                    margin-bottom: 7px;
+                                    font-size: 18px;
+                                    font-weight: 700;
+                                }
+                                p {
+                                    height: 18px;
+                                    font-size: 14px;
+                                    line-height: 18px;
+                                }
+                            }
+
+                        }
+                    }
+                }
+                .slide {
+                    margin-top: 28px;
+                    padding: 0 15px;
+                    list-style:none;
+                    .gap {
+                        a {
+                            position: relative;
+                            display: block;
+                            span {
+                                width: 360px;
+                                height: 220px;
+                                img {
+                                    
+                                }
+                            }
+                            .imgtit {
+
+                                strong {
+                                    height: 20px;
+                                    margin-bottom: 7px;
+                                    font-size: 18px;
+                                    font-weight: 700;
+                                }
+                                p {
+                                    height: 18px;
+                                    font-size: 14px;
+                                    line-height: 18px;
+                                }
+                            }
+
+                        }
+                    }
+                }
+                .slide {
+                    margin-top: 28px;
+                    padding: 0 15px;
+                    list-style:none;
+                    .gap {
+                        a {
+                            position: relative;
+                            display: block;
+                            span {
+                                width: 360px;
+                                height: 220px;
+                                img {
+                                    
+                                }
+                            }
+                            .imgtit {
+                                background: rgba(0, 0, 0, 0.5);
+                                color: #111;
+                                position: absolute;
+                                bottom: 0;
+                                left: 0;
+                                right: 0;
+                                height: 80px;
+                                padding: 18px 20px 0;
+                                color: #fff;
+                                line-height: 20px;
+                                text-align: center;
+                                strong {
+                                    height: 20px;
+                                    margin-bottom: 7px;
+                                    font-size: 18px;
+                                    font-weight: 700;
+                                }
+                                p {
+                                    height: 18px;
+                                    font-size: 14px;
+                                    line-height: 18px;
+                                }
+                            }
+
+                        }
+                    }
+                }
+            }
+        }
+    }
+
+    
+    #section8 {
+        .slide-container {
+            .slide-wrap {
+                width: 1140px;
+                position: relative;
+                margin: 0 auto;
+                display: flex;
+                justify-content: center;
+                .slide {
+                    margin-top: 28px;
+                    padding: 0 15px;
+                    list-style:none;
+                    .gap {
+                        a {
+                            position: relative;
+                            display: block;
+                            span {
+                                width: 360px;
+                                height: 220px;
+                                img {
+                                    
+                                }
+                            }
+                            .imgtit {
+                                background: rgba(255,255,255,.5);
+                                color: #111;
+                                position: absolute;
+                                bottom: 0;
+                                left: 0;
+                                right: 0;
+                                height: 80px;
+                                padding: 18px 20px 0;
+                                color: #fff;
+                                line-height: 20px;
+                                text-align: left;
+                            
+                                strong {
+                                    height: 20px;
+                                    margin-bottom: 7px;
+                                    font-size: 18px;
+                                    font-weight: 700;
+                                }
+                                p {
+                                    height: 18px;
+                                    font-size: 14px;
+                                    line-height: 18px;
+                                }
+                            }
+
+                        }
+                    }
+                }
+                .slide {
+                    margin-top: 28px;
+                    padding: 0 15px;
+                    .gap {
+                        a {
+                            position: relative;
+                            display: block;
+                            span {
+                                width: 360px;
+                                height: 220px;
+                                img {
+                                    
+                                }
+                            }
+                            .imgtit {
+                                position: absolute;
+                                height: 70px;
+                                padding: 13px 10px 0;
+                                color: #fff;
+                                line-height: 20px;
+                                text-align: center;
+                                background: rgba(0,0,0,.5);
+                                display: block;
+                                strong {
+                                    height: 20px;
+                                    margin-bottom: 7px;
+                                    font-size: 18px;
+                                    font-weight: 700;
+                                }
+                                p {
+                                    height: 18px;
+                                    font-size: 14px;
+                                    line-height: 18px;
+                                }
+                            }
+
+                        }
+                    }
+                }
+                .slide {
+                    margin-top: 28px;
+                    padding: 0 15px;
+                    .gap {
+                        a {
+                            position: relative;
+                            display: block;
+                            span {
+                                width: 360px;
+                                height: 220px;
+                                img {
+                                    
+                                }
+                            }
+                            .imgtit {
+                                position: absolute;
+                                height: 70px;
+                                padding: 13px 10px 0;
+                                color: #fff;
+                                line-height: 20px;
+                                text-align: center;
+                                background: rgba(0,0,0,.5);
+                                display: block;
+                                strong {
+                                    height: 20px;
+                                    margin-bottom: 7px;
+                                    font-size: 18px;
+                                    font-weight: 700;
+                                }
+                                p {
+                                    height: 18px;
+                                    font-size: 14px;
+                                    line-height: 18px;
+                                }
+                            }
+
+                        }
+                    }
+                }
+            }
+        }
+    }
+
+
+    #section9 {
+                width:100%;
+                padding: 24px 0;
+        .slide-container {
+            width: 1140px;
+            margin: 0 auto;
+            .slide-view {
+                .slide-wrap {
+                    .slide {
+                        position: relative;
+                        text-align: center;
+                        .gap {
+                            a {
+                                h1 {}
+                                br {}
+                                h1 {}
+                            }
+                        }
+                    }
+                }
+            }
+        }
+    }
+
+
+    #section10 {
+        width:100%;
+        padding: 24px 0;
+.slide-container {
+    width: 1140px;
+    margin: 0 auto;
+    .slide-view {
+        .slide-wrap {
+            .slide {
+                position: relative;
+                text-align: center;
+                .gap {
+                    a {
+                        img{}
+                    }
+                }
+            }
+        }
+    }
+}
+}
+
+
+
+#section11 {
+    .slide-container {
+        width: 1140px;
+        position: relative;
+        margin: 0 auto;
+        display: flex;
+        justify-content: center;
+        
+        .slide-wrap {
+            .slide {
+                float: left;
+                list-style:none;
+                .gap {
+                    a {
+                        position: relative;
+                        display: block;
+                        span {
+                            width: 285px;
+                            height: 400px;
+                            display: block;
+                            img {
+                                width: 100%;
+                                height: 100%;
+                            }
+                        }
+                        .imgtit1 {
+                            background: rgba(255,255,255,.5);
+                            color: #111;
+                            position: absolute;
+                            bottom: 0;
+                            left: 0;
+                            right: 0;
+                            height: 80px;
+                            padding: 18px 20px 0;
+                            color: #fff;
+                            line-height: 20px;
+                            text-align: left;
+                            
+                            strong {}
+                            p {}
+                        }
+                    }
+                }
+            }
+            .slide {
+                .gap {
+                    a {
+                        span {
+                            img {
+                            }
+                        }
+                        .imgtit2 {
+                            background: rgba(0,0,0,.5);
+                            color: #111;
+                            position: absolute;
+                            bottom: 0;
+                            left: 0;
+                            right: 0;
+                            height: 80px;
+                            padding: 18px 20px 0;
+                            color: #fff;
+                            line-height: 20px;
+                            text-align: left;
+                            strong {}
+                            p {}
+                        }
+                    }
+                }
+            }
+            .slide {
+                .gap {
+                    a {
+                        span {
+                            img {
+                            }
+                        }
+                        .imgtit3 {
+                            background: rgba(255,255,255,.5);
+                            color: #111;
+                            position: absolute;
+                            bottom: 0;
+                            left: 0;
+                            right: 0;
+                            height: 80px;
+                            padding: 18px 20px 0;
+                            color: #fff;
+                            line-height: 20px;
+                            text-align: left;
+                            
+                            strong {}
+                            p {}
+                        }
+                    }
+                }
+            }
+            .slide {
+                .gap {
+                    a {
+                        span {
+                            img {
+                            }
+                        }
+                        .imgtit4 {
+                            background: rgba(0,0,0,.5);
+                            color: #111;
+                            position: absolute;
+                            bottom: 0;
+                            left: 0;
+                            right: 0;
+                            height: 80px;
+                            padding: 18px 20px 0;
+                            color: #fff;
+                            line-height: 20px;
+                            text-align: left;
+                            strong {}
+                            p {}
+                        }
+                    }
+                }
+            }
+        }
+    }
+}
+
+#section12 {
+    .slide-container {
+        width: 1140px;
+        position: relative;
+        padding: 65px 0 0;
+        margin: 0 auto;
+        display: flex;
+        justify-content: center;
+        
+        .slide-wrap {
+            .slide {
+                float: left;
+                list-style:none;
+                .gap {
+                    a {
+                        position: relative;
+                        display: block;
+                        span {
+                            width: 285px;
+                            height: 400px;
+                            display: block;
+                            img {
+                                width: 100%;
+                                height: 100%;
+                            }
+                        }
+                        .imgtit1 {
+                            background: rgba(255,255,255,.5);
+                            color: #111;
+                            position: absolute;
+                            bottom: 0;
+                            left: 0;
+                            right: 0;
+                            height: 80px;
+                            padding: 18px 20px 0;
+                            color: #fff;
+                            line-height: 20px;
+                            text-align: left;
+                            
+                            strong {}
+                            p {}
+                        }
+                    }
+                }
+            }
+            .slide {
+                .gap {
+                    a {
+                        span {
+                            img {
+                            }
+                        }
+                        .imgtit2 {
+                            background: rgba(0,0,0,.5);
+                            color: #111;
+                            position: absolute;
+                            bottom: 0;
+                            left: 0;
+                            right: 0;
+                            height: 80px;
+                            padding: 18px 20px 0;
+                            color: #fff;
+                            line-height: 20px;
+                            text-align: left;
+                            strong {}
+                            p {}
+                        }
+                    }
+                }
+            }
+            .slide {
+                .gap {
+                    a {
+                        span {
+                            img {
+                            }
+                        }
+                        .imgtit3 {
+                            background: rgba(255,255,255,.5);
+                            color: #111;
+                            position: absolute;
+                            bottom: 0;
+                            left: 0;
+                            right: 0;
+                            height: 80px;
+                            padding: 18px 20px 0;
+                            color: #fff;
+                            line-height: 20px;
+                            text-align: left;
+                            
+                            strong {}
+                            p {}
+                        }
+                    }
+                }
+            }
+            .slide {
+                .gap {
+                    a {
+                        span {
+                            img {
+                            }
+                        }
+                        .imgtit4 {
+                            background: rgba(0,0,0,.5);
+                            color: #111;
+                            position: absolute;
+                            bottom: 0;
+                            left: 0;
+                            right: 0;
+                            height: 80px;
+                            padding: 18px 20px 0;
+                            color: #fff;
+                            line-height: 20px;
+                            text-align: left;
+                            strong {}
+                            p {}
+                        }
+                    }
+                }
+            }
+        }
+    }
+}
+
+
+
+
+#section13 {
+    width:100%;
+    padding: 55px 0;
+.slide-container {
+width: 1140px;
+margin: 0 auto;
+.slide-view {
+    .slide-wrap {
+        .slide {
+            position: relative;
+            text-align: center;
+            .gap {
+                a {
+                    img{}
+                }
+            }
+        }
+    }
+}
+}
+}
+
+
+
+#section14 {
+    position: relative;
+    width: 100%;
+
+    .slide-container {
+
+        .slide-view {
+            .slide-wrap {
+                            width: 1140px;
+                            position: relative;
+                            margin: 0 auto;
+                            display: flex;
+                            justify-content: center;
+                            border-top: 1px solid #e8e8e9;
+                            border-bottom: 1px solid #e8e8e9;
+                .slide {
+                    width: 100%;
+                    padding: 0;
+                    float: none;
+                    height: auto;
+                    padding-top: 20px;
+                    .gap {
+                        a {
+                            img {
+                                
+                            }
+                        }
+                    }
+                }
+                .content {
+                    
+
+                    h5 {
+                        
+                        font-size: 14px;
+                        font-weight: 700;
+                        line-height: 120%;
+                        color: #333;
+                    }
+                    h4 {
+                        
+                        font-size: 14px;
+                        font-weight: 400;
+                    }
+                    h3 {
+                        s {
+                            font-size: 15px;
+                            font-weight: 400;
+                        }
+                    }
+                    p {
+                        em {
+                            color:#f33f46;
+                            font-size:24px;
+                            font-weight:400;
+                        }
+                        span {
+                            font-size:24px;
+                            font-weight:700;
+                            color:#111;
+                    }
+                    }
+                }
+                .slide {
+                    .gap {
+                        a {
+                            h1 {
+                                text-align: center;
+                                font-size: 28px;
+                                font-weight: 400;
+                            }
+                        }
+                    }
+                }
+                .content {
+                    h5 {
+                        font-size: 14px;
+                        font-weight: 700;
+                    }
+                    h4 {
+                        font-size: 14px;
+                        font-weight: 400;
+                    }
+                    h3 {
+                        s {
+                            font-size: 15px;
+                            font-weight: 400;
+                        }
+                    }
+                    p {
+                        em {
+                            color:#f33f46;
+                            font-size:24px;
+                            font-weight:400;
+                        }
+                        span {
+                            font-size:24px;
+                            font-weight:700;
+                            color:#111;
+                    }
+                    span {
+                        font-size: 16px;
+                        color: #111;
+                        font-weight: 700;
+                    }
+                    }
+                }
+                .slide {
+                    .gap {
+                        a {
+                            h1 {
+                                text-align: center;
+                                font-size: 28px;
+                                font-weight: 400;
+                            }
+                        }
+                    }
+                }
+                .content {
+                    h5 {
+                        font-size: 14px;
+                        font-weight: 700;
+                    }
+                    h4 {
+                        font-size: 14px;
+                        font-weight: 400;
+                    }
+                    h3 {
+                        s {
+                            font-size: 15px;
+                            font-weight: 400;
+                        }
+                    }
+                    p {
+                        em {
+                            color:#f33f46;
+                            font-size:24px;
+                            font-weight:400;
+                        }
+                        span {
+                            font-size:24px;
+                            font-weight:700;
+                            color:#111;
+                    }
+                    span {
+                        font-size: 16px;
+                        color: #111;
+                        font-weight: 700;
+                    }
+                    }
+                }
+            }
+        }
+    }
+
+}
+
+
+#section15 {
+    position: relative;
+    width: 100%;
+
+    .slide-container {
+
+        .slide-view {
+            .slide-wrap {
+                            width: 1140px;
+                            position: relative;
+                            margin: 0 auto;
+                            display: flex;
+                            justify-content: center;
+                .slide {
+                    width: 100%;
+                    padding: 0;
+                    float: none;
+                    height: 100%;
+                    padding-top: 20px;
+                    .gap {
+                        a {
+                            img {
+                                
+                            }
+                        }
+                    }
+                }
+                .content {
+                    
+
+                    h5 {
+                        
+                        font-size: 14px;
+                        font-weight: 700;
+                        line-height: 120%;
+                        color: #333;
+                    }
+                    h4 {
+                        
+                        font-size: 14px;
+                        font-weight: 400;
+                    }
+                    h3 {
+                        s {
+                            font-size: 15px;
+                            font-weight: 400;
+                        }
+                    }
+                    p {
+                        em {
+                            color:#f33f46;
+                            font-size:24px;
+                            font-weight:400;
+                        }
+                        span {
+                            font-size:24px;
+                            font-weight:700;
+                            color:#111;
+                    }
+                    }
+                }
+                .slide {
+                    .gap {
+                        a {
+                            h1 {
+                                text-align: center;
+                                font-size: 28px;
+                                font-weight: 400;
+                            }
+                        }
+                    }
+                }
+                .content {
+                    h5 {
+                        font-size: 14px;
+                        font-weight: 700;
+                    }
+                    h4 {
+                        font-size: 14px;
+                        font-weight: 400;
+                    }
+                    h3 {
+                        s {
+                            font-size: 15px;
+                            font-weight: 400;
+                        }
+                    }
+                    p {
+                        em {
+                            color:#f33f46;
+                            font-size:24px;
+                            font-weight:400;
+                        }
+                        span {
+                            font-size:24px;
+                            font-weight:700;
+                            color:#111;
+                    }
+                    span {
+                        font-size: 16px;
+                        color: #111;
+                        font-weight: 700;
+                    }
+                    }
+                }
+                .slide {
+                    .gap {
+                        a {
+                            h1 {
+                                text-align: center;
+                                font-size: 28px;
+                                font-weight: 400;
+                            }
+                        }
+                    }
+                }
+                .content {
+                    h5 {
+                        font-size: 14px;
+                        font-weight: 700;
+                    }
+                    h4 {
+                        font-size: 14px;
+                        font-weight: 400;
+                    }
+                    h3 {
+                        s {
+                            font-size: 15px;
+                            font-weight: 400;
+                        }
+                    }
+                    p {
+                        em {
+                            color:#f33f46;
+                            font-size:24px;
+                            font-weight:400;
+                        }
+                        span {
+                            font-size:24px;
+                            font-weight:700;
+                            color:#111;
+                    }
+                    span {
+                        font-size: 16px;
+                        color: #111;
+                        font-weight: 700;
+                    }
+                    }
+                }
+            }
+        }
+    }
+
+}
+
+
+
+
+
+#section16 {
+    width:100%;
+    padding: 55px 0;
+.slide-container {
+width: 1140px;
+margin: 0 auto;
+.slide-view {
+    .slide-wrap {
+        .slide {
+            position: relative;
+            text-align: center;
+            .gap {
+                a {
+                    img{}
+                }
+            }
+        }
+    }
+}
+}
+}
+
+#section17 {
+    .slide-container {
+        height: 388px;
+        border: 1px solid #e8e8e8;
+        .slide-view {
+            .slide-wrap {
+                            width: 1140px;
+                            position: relative;
+                            margin: 0 auto;
+                            display: flex;
+                            justify-content: center;
+                .slide {
+                    position: relative;
+                    width: 384px;
+                    height: 385px;
+                    padding: 0;
+                    margin-right: 25px;
+                    border-right: 1px solid #e8e8e8;
+                    .gap {
+                        a {
+                            display: block;
+                            img{
+                                width: 100%;
+                            }
+                        }
+                    }
+                }
+                .slide2 {
+                    position: relative;
+                    width: 238px;
+                    height: 100%;
+                    padding: 19px 25px 0;
+                    float: left;
+                    .gap {
+                        a {
+                            display: block;
+                            img {
+                                position: relative;
+                                overflow: hidden;
+                                width: 188px;
+                                height: 188px;
+                            }
+                        }
+                        .content {
+                            float: left;
+                            width: 100%;
+                            padding-top: 13px;
+                            h5 {
+                                margin-bottom: 6px;
+                                font-size: 14px;
+                                font-weight: 700;
+                                color: #111;
+                            }
+                            h4 {
+                                height: 40px;
+                                font-size: 14px;
+                                overflow: hidden;
+                                text-overflow: ellipsis;
+                                word-wrap: break-word;
+                                display: block;
+                                -webkit-line-clamp: 2;
+                                -webkit-box-orient: vertical;
+                                line-height: 20px;
+                                color: #353535;
+                            }
+                            
+                            p {
+                                margin: 17px 0 0;
+                            span {
+                                
+                                font-size: 24px;
+                                color: #111;
+                                font-weight: 700;
+                            }
+                            span {}
+                        }
+                        button {
+                            height: 20px;
+                            margin: 10px 0 0;
+                            width: auto;
+                            padding: 0 6px;
+                            font-size: 12px;
+                            line-height: 19px;
+                            border: 1px solid #d0d0d0;
+                            background: #f7f7f7;
+                            text-align: center;
+                        }
+                        }
+                    }
+                }
+                .slide {
+                    width: 238px;
+                    height: 100%;
+                    padding: 19px 25px 0;
+                    .gap {
+                        a {
+                            h1 {
+                                text-align: center;
+                                font-size: 28px;
+                                font-weight: 400;
+                            }
+                        }
+                    }
+                }
+                .content {
+                    h5 {
+                        font-size: 14px;
+                        font-weight: 700;
+                    }
+                    h4 {
+                        font-size: 14px;
+                        font-weight: 400;
+                    }
+                    h3 {
+                        s {
+                            font-size: 15px;
+                            color: #909090;
+
+                        }
+                        span {
+                            font-size: 15px;
+                            color: #909090;
+                            
+                            
+                        }
+                    }
+                    p {
+                        em {
+                            color:#f33f46;
+                            font-size:24px;
+                            font-weight:400;
+                        }
+                        span {
+                            font-size:24px;
+                            font-weight:700;
+                            color:#111;
+                    }
+                    span {
+                        font-size: 16px;
+                        color: #111;
+                        font-weight: 700;
+                    }
+                    }
+                    button {
+                        height: 20px;
+                        margin: 10px 0 0;
+                        width: auto;
+                        padding: 0 6px;
+                        font-size: 12px;
+                        line-height: 19px;
+                        border: 1px solid #d0d0d0;
+                        background: #f7f7f7;
+                        text-align: center;
+                    }
+                }
+
+            }
+        }
+    }
+}
+#section18 {
+    .slide-container {
+        height: 388px;
+        border: 1px solid #e8e8e8;
+        .slide-view {
+            .slide-wrap {
+                            width: 1140px;
+                            position: relative;
+                            margin: 0 auto;
+                            display: flex;
+                            justify-content: center;
+                .slide {
+                    position: relative;
+                    width: 384px;
+                    height: 385px;
+                    padding: 0;
+                    margin-right: 25px;
+                    border-right: 1px solid #e8e8e8;
+                    .gap {
+                        a {
+                            display: block;
+                            img{
+                                width: 100%;
+                            }
+                        }
+                    }
+                }
+                .slide2 {
+                    position: relative;
+                    width: 238px;
+                    height: 100%;
+                    padding: 19px 25px 0;
+                    float: left;
+                    .gap {
+                        a {
+                            display: block;
+                            img {
+                                position: relative;
+                                overflow: hidden;
+                                width: 188px;
+                                height: 188px;
+                            }
+                        }
+                        .content {
+                            float: left;
+                            width: 100%;
+                            padding-top: 13px;
+                            h5 {
+                                margin-bottom: 6px;
+                                font-size: 14px;
+                                font-weight: 700;
+                                color: #111;
+                            }
+                            h4 {
+                                height: 40px;
+                                font-size: 14px;
+                                overflow: hidden;
+                                text-overflow: ellipsis;
+                                word-wrap: break-word;
+                                display: block;
+                                -webkit-line-clamp: 2;
+                                -webkit-box-orient: vertical;
+                                line-height: 20px;
+                                color: #353535;
+                            }
+                            
+                            p {
+                                margin: 17px 0 0;
+                            span {
+                                
+                                font-size: 24px;
+                                color: #111;
+                                font-weight: 700;
+                            }
+                            span {}
+                        }
+                        button {
+                            height: 20px;
+                            margin: 10px 0 0;
+                            width: auto;
+                            padding: 0 6px;
+                            font-size: 12px;
+                            line-height: 19px;
+                            border: 1px solid #d0d0d0;
+                            background: #f7f7f7;
+                            text-align: center;
+                        }
+                        }
+                    }
+                }
+                .slide {
+                    width: 238px;
+                    height: 100%;
+                    padding: 19px 25px 0;
+                    .gap {
+                        a {
+                            h1 {
+                                text-align: center;
+                                font-size: 28px;
+                                font-weight: 400;
+                            }
+                        }
+                    }
+                }
+                .content {
+                    h5 {
+                        font-size: 14px;
+                        font-weight: 700;
+                    }
+                    h4 {
+                        font-size: 14px;
+                        font-weight: 400;
+                    }
+                    h3 {
+                        s {
+                            font-size: 15px;
+                            color: #909090;
+
+                        }
+                        span {
+                            font-size: 15px;
+                            color: #909090;
+                            
+                            
+                        }
+                    }
+                    p {
+                        em {
+                            color:#f33f46;
+                            font-size:24px;
+                            font-weight:400;
+                        }
+                        span {
+                            font-size:24px;
+                            font-weight:700;
+                            color:#111;
+                    }
+                    span {
+                        font-size: 16px;
+                        color: #111;
+                        font-weight: 700;
+                    }
+                    }
+                    button {
+                        height: 20px;
+                        margin: 10px 0 0;
+                        width: auto;
+                        padding: 0 6px;
+                        font-size: 12px;
+                        line-height: 19px;
+                        border: 1px solid #d0d0d0;
+                        background: #f7f7f7;
+                        text-align: center;
+                    }
+                }
+
+            }
+        }
+    }
+}
+
+
+
+    #footer {
+        width: 100%;
+        min-width: 1140px;
+        border-top: 1px solid #e8e8e8;
+        .row1 {
+            height: 227px;
+            padding-top: 30px;
+        }
+        .container {
+            position: relative;
+            width: 1140px;
+            margin: 0 auto;
+        }
+        .gap {
+            position: relative;
+            width: 398px;
+            padding: 0 30px;
+            float: left;
+            height: 170px;
+            .left {
+                position: relative;
+                margin-top: 10px;
+                .txt-box {
+                    position: relative;
+                    .txt1 {
+                        text-align: left;
+                        font-size: 18px;
+                        color: #111;
+                        font-weight: 700;
+                        a {
+                            position: absolute;
+                            top: 7px;
+                            right: 0;
+                            padding-right: 14px;
+                            font-size: 12px;
+                            color: #959595;
+                            background: url(../img/ico_btn_arrw_more.png) no-repeat right center;
+                        }
+                    }
+                    
+                    ul {
+                        .text {
+                            margin-top: 20px;
+                            font-size: 13px;
+                            color: #959595;
+                            a{
+                                float: left;
+                                overflow: hidden;
+                                text-overflow: ellipsis;
+                                white-space: nowrap;
+                                width: 170px;
+                                font-size: 13px;
+                                color: #959595;
+                            }
+                            span {
+                                float: right;
+                            }
+                        }
+                        .text {
+                            margin-top: 10px;
+                            font-size: 13px;
+                            color: #959595;
+                            a{
+                                float: left;
+                                overflow: hidden;
+                                text-overflow: ellipsis;
+                                white-space: nowrap;
+                                width: 170px;
+                                font-size: 13px;
+                                color: #959595;
+                            }
+                            span {
+                                float: right;
+                            }
+                        }
+                    }
+                    
+                }
+
+
+            }
+            .left2 {
+                margin-top: 60px;
+                .txt-box2 {
+                    position: relative;
+                    .txt2 {
+                        text-align: left;
+                        font-size: 18px;
+                        color: #111;
+                        font-weight: 700;
+                        a {
+                            position: absolute;
+                            top: 7px;
+                            right: 0;
+                            padding-right: 14px;
+                            font-size: 12px;
+                            color: #959595;
+                            background: url(../img/ico_btn_arrw_more.png) no-repeat right center;
+                        }
+                    }
+                }
+            }
+
+        }
+
+        .center{
+            padding: 0 30px;
+            width: 244px;
+            position: relative;
+            float: left;
+            height: 170px;
+            
+        .txt {
+            font-size: 18px;
+            color: #111;
+            font-weight: 700;
+            text-align: left;
+            padding-top: 8px;
+        }
+        ul {
+            margin: -5px -7px 0;
+            .ico-1 {
+                float: left;
+                width: 83px;
+                padding: 20px 0 0;
+                margin: 0 7px;
+                text-align: center;
+                background-repeat: no-repeat;
+                background-position: center top 20px;
+            img {
+            }
+            a {
+                display: inline-block;
+                padding-top: 1px;
+                font-size: 13px;
+                color: #959595;
+            }
+            }
+            .ico-2 {
+                float: left;
+                width: 83px;
+                padding: 20px 0 0;
+                margin: 0 7px;
+                text-align: center;
+                background-repeat: no-repeat;
+                background-position: center top 20px;
+            img {
+            }
+            a {
+                display: inline-block;
+                padding-top: 2px;
+                font-size: 13px;
+                color: #959595;
+            }
+            }
+            .ico-3 {
+                float: left;
+                width: 83px;
+                padding: 20px 0 0;
+                margin: 0 7px;
+                text-align: center;
+                background-repeat: no-repeat;
+                background-position: center top 20px;
+            img {
+            }
+            a {
+                display: inline-block;
+                padding-top: 2px;
+                font-size: 13px;
+                color: #959595;
+            }
+            }
+            .ico-4 {
+                float: left;
+                width: 80px;
+                padding: 20px 0 0;
+                margin: -30px 7px;
+                text-align: center;
+                background-repeat: no-repeat;
+                
+            img {
+            }
+            a {
+                display: inline-block;
+                padding-top: 1px;
+                font-size: 13px;
+                color: #959595;
+            }
+            }
+
+        }
+    }
+
+        .center1-2 {
+            padding: 0 30px;
+            width: 244px;
+            position: relative;
+            float: left;
+            height: 170px;
+
+            }
+        .txt {
+            font-size: 18px;
+            color: #111;
+            font-weight: 700;
+            text-align: left;
+            padding-top: 8px;
+        }
+        ul {
+            margin: -5px -7px 0;
+            .ico-1 {
+                float: left;
+                width: 83px;
+                padding: 20px 0 0;
+                margin: 0 7px;
+                text-align: center;
+                background-repeat: no-repeat;
+                background-position: center top 20px;
+            img {
+            }
+            a {
+                display: inline-block;
+                padding-top: 1px;
+                font-size: 13px;
+                color: #959595;
+            }
+            }
+            .ico-2 {
+                float: left;
+                width: 83px;
+                padding: 20px 0 0;
+                margin: 0 7px;
+                text-align: center;
+                background-repeat: no-repeat;
+                background-position: center top 20px;
+            img {
+            }
+            a {
+                display: inline-block;
+                padding-top: 2px;
+                font-size: 13px;
+                color: #959595;
+            }
+            }
+            .ico-3 {
+                float: left;
+                width: 83px;
+                padding: 20px 0 0;
+                margin: 0 7px;
+                text-align: center;
+                background-repeat: no-repeat;
+                background-position: center top 20px;
+            img {
+            }
+            a {
+                display: inline-block;
+                padding-top: 2px;
+                font-size: 13px;
+                color: #959595;
+            }
+            }
+            .ico-4 {
+                float: left;
+                width: 80px;
+                padding: 20px 0 0;
+                margin: 0 7px;
+                text-align: center;
+                background-repeat: no-repeat;
+                
+            img {
+            }
+            a {
+                display: inline-block;
+                padding-top: 1px;
+                font-size: 13px;
+                color: #959595;
+            }
+            }
+
+
+        }
+        .right {
+            padding: 0 30px;
+            width: 244px;
+            position: relative;
+            float: left;
+            height: 170px;
+
+            .txt {
+                font-size: 18px;
+                color: #111;
+                font-weight: 700;
+                text-align: left;
+                padding-top: 8px;
+            }
+            ul {
+                margin: -5px -7px 0;
+                .ico-1 {
+                    float: left;
+                    width: 83px;
+                    padding: 20px 0 0;
+                    margin: 0 7px;
+                    text-align: center;
+                    background-repeat: no-repeat;
+                    background-position: center top 20px;
+                    img {}
+                    a {
+                        display: inline-block;
+                        padding-top: 1px;
+                        font-size: 13px;
+                        color: #959595;
+                    }
+                }
+                .ico-2 {
+                    img {}
+                    a {}
+                }
+                .ico-3 {
+                    img {}
+                    a {}
+                }
+                .ico-4 {
+                    img {}
+                    a {}
+                }
+
+            }
+        }
+
+        .info {
+            height: 42px;
+            background: #f7f7f7;
+            .container {
+                position: relative;
+                width: 1140px;
+                margin: 0 auto;
+
+                ul {
+                    text-align: center;
+                    li {
+                        position: relative;
+                        float: left;
+                        width: 20%;
+                        a {
+                            display: inline-block;
+                            width: 100%;
+                            line-height: 42px;
+                            font-size: 13px;
+                            color: #707070;
+                        }
+                    }
+                    li {
+                        position: relative;
+                        float: left;
+                        width: 20%;
+                        a {
+                            display: inline-block;
+                            width: 100%;
+                            line-height: 42px;
+                            font-size: 13px;
+                            color: #707070;
+                        }
+                    }
+                    li {
+                        position: relative;
+                        float: left;
+                        width: 20%;
+                        a {
+                            display: inline-block;
+                            width: 100%;
+                            line-height: 42px;
+                            font-size: 13px;
+                            color: #707070;
+                        }
+                    }
+                    li {
+                        position: relative;
+                        float: left;
+                        width: 20%;
+                        a {
+                            display: inline-block;
+                            width: 100%;
+                            line-height: 42px;
+                            font-size: 13px;
+                            color: #707070;
+                        }
+                    }
+                    li {
+                        position: relative;
+                        float: left;
+                        width: 20%;
+                        a {
+                            display: inline-block;
+                            width: 100%;
+                            line-height: 42px;
+                            font-size: 13px;
+                            color: #707070;
+                        }
+                    }
+                }
+            }
+
+        }
+    }
+        .bottom {
+            padding: 40px 0;
+            background: #fff;
+            .container {
+                position: relative;
+                width: 1140px;
+                margin: 0 auto;
+                h2{
+                    position: absolute;
+                    top: 0;
+                    left: 30px;
+                    a {
+                        display: inline-block;
+                        vertical-align: top;
+                        img {
+                            display: inline-block;
+                            width: 150px;
+                            height: 33px;
+                            
+                        }
+                    }
+                
+                .center {
+                    width:1140px;
+                    ul {
+                        padding-right:272px;
+                        padding-left: 220px;
+                        li {
+                            margin:0 200px;
+                            font-size: 12px;
+
+                        }
+                    }
+                    .center2{
+                        width:1140px;
+                        ul {
+                            padding: 0 0 30px 0;
+                            li {
+                                margin:0 200px;
+                                font-size: 12px;
+                            }
+                        }
+                    }
+                }
+            }
+        }
+
+    }

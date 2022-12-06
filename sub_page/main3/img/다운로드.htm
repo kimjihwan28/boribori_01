@@ -1,0 +1,583 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+	<meta http-equiv="X-UA-Compatible" content="IE=11" />
+	<meta charset="UTF-8">
+	<meta name="facebook-domain-verification" content="ziavk6naekxvjc3pnyfcwzsbrsli6v" />
+	<meta name="google-site-verification" content="SjzidzPmQxvJ3mO0J33Y7vD-e6G7DV-bP8OtMpjzNSo" />
+	<meta name="naver-site-verification" content="fa9f2549d45282609173a1642edf31e4a999eea3" />
+	<meta name="msvalidate.01" content="D273CF4A6E5B6C08C457E3126C6EAE67" />
+	<meta http-equiv="x-dns-prefetch-control" content="on">
+	<meta content="upgrade-insecure-requests" http-equiv="Content-Security-Policy"/>
+	<meta name="description" content="출산용품부터 프리미엄 의류까지! 특가, 추가 할인으로 만나보세요. 엄마&아빠의 사랑을 담는 쇼핑몰 [보리보리]"/>
+
+	<meta property="og:type" content="website"/>
+	<meta property="og:title" content="보리보리"/>
+	<meta property="og:description" content="출산용품부터 프리미엄 의류까지! 특가, 추가 할인으로 만나보세요. 엄마&아빠의 사랑을 담는 쇼핑몰 [보리보리]"/>
+	<meta property="og:image" content="https://static-l.halfclub.com/cdn_bp/components/assets/images/common/ico_t_bi_br_800x400.jpg"/>
+	<meta property="og:url" content="https://www.boribori.co.kr"/>
+
+	<link rel="dns-prefetch" href="//static-s.halfclub.com/">
+	<link rel="dns-prefetch" href="//static-l.halfclub.com/">
+	<link rel="dns-prefetch" href="//cdn.boribori.co.kr/">
+	<link rel="dns-prefetch" href="//cdn2.boribori.co.kr/">
+	<link rel="dns-prefetch" href="//apix.halfclub.com/">
+	<link rel="dns-prefetch" href="//cf-api.halfclub.com/">
+<title>보리보리</title>
+
+<script type="text/javascript">
+	function getCookie(key) {
+		var keyValue = document.cookie.match('(^|;) ?' + key + '=([^;]*)(;|$)');
+		return keyValue ? keyValue[2] : null;
+	}
+	window.globalDsFirstload = true;
+
+	// if('https:' == document.location.protocol)
+    // {
+	// 	setTimeout(function() {
+	// 		document.location.href = document.location.href.replace('https:', 'http:');
+	// 	},3000);
+    // }
+
+	function accessLog(pagepath, pcid, uid, partid) {
+		try{
+			$.get("//gate.halfclub.com/log?kind=front&par1=boriPC&par2="+pagepath
+					+ "&par3="
+					+ "&par4="
+					+ "&par5="
+					+ "&pcid=" + pcid + "&uid=" + uid + "&partid=" + partid + "&mnm=", function (data) {
+				if(data.status == "crawling") {
+					window.location.href = 'https://gate.halfclub.com/Error.html';
+				}
+			});
+		}
+		catch(e) {}
+	}
+
+	var ptnerId = getCookie("_partid_");
+
+	(function() {
+		var url = window.document.location.href;
+		if(url.indexOf("/partner/commonv2.aspx") >= 0 || url.indexOf("/partner/commonv2") >= 0){
+			var param = getCookie("_partid_");
+			if(param == null || param == undefined || param == ""){
+				param = "b_boribori";
+			}
+			if(true == parse_gSeq()) {
+				gatePageCheckByUrl();
+			}else{
+				location.href = "https://gate.boribori.co.kr/?partnerid=" + param + "&site_cd=" + PCCode.siteCd + "&type=home";
+			}
+			// location.href = "https://gate.boribori.co.kr/?partnerid=" + param + "&site_cd=2&type=home";
+			return;
+		}
+		var idx = url.indexOf("?");
+		var queryString = url.substring(idx+1);
+		if(url.indexOf("/mandm/naver") >= 0){
+			location.href = "https://gate.boribori.co.kr/naver?" + queryString;
+			return;
+		}else if(url.indexOf("/mandm") >= 0) {
+			location.href = "https://gate.boribori.co.kr?" + queryString;
+			return;
+		}
+
+		<!-- "Site=" 정보가 있다면 선행 | Gate Page URL -->
+		var returnUrl = window.document.location.href;
+		var arrPage = ['planNo=', 'product/', 'deal/'];	// 기획전, 상세, 딜
+		var arrGateUrl = ['theme&p1=', 'detail_pcode&p1=', 'detail_scode&p1='];
+		var gateYn = 'N';	// Gate Redirections Y/N
+
+		for (var i = 0; i < arrPage.length; i++) {
+			if(returnUrl.indexOf(arrPage[i]) != -1){
+				var urlParam = returnUrl.split(arrPage[i])[1];
+				if(urlParam != undefined && urlParam != ""){
+					if(urlParam.indexOf("site=") != -1){
+						returnUrl = 'https://gate.boribori.co.kr?site_cd=2&type=' + arrGateUrl[i] + urlParam.replace('?' , '&');
+						gateYn = 'Y';
+					}
+				}
+				location.href = returnUrl;
+			}
+		}
+
+		<!-- mobile && Gate URL Redirections -->
+		if(navigator.userAgent.toLowerCase().indexOf('mobile') >= 0 && gateYn == 'N'){
+
+			if(document.URL.indexOf("planNo=") != -1){ //PC주소로 기획전을 들어왔을때
+				var planNo = document.URL.split("planNo=")[1];
+				if(planNo != undefined && planNo != ""){
+					if(planNo.indexOf("&") != -1){ //뒤에 파라미터가 있으면
+						planNo = planNo.split("&")[0];
+					}
+					var tempUrl ='http://nm.boribori.co.kr/plan/' + planNo;
+
+					if(ptnerId != null && typeof ptnerId != 'undefined' && ptnerId != ""){
+						tempUrl += '?partnerid=' + ptnerId +'_m';
+					}
+					location.href = tempUrl;
+				}
+			} else if (document.URL.indexOf("product/") != -1){ //PC주소로 상세페이지 들어왔을때
+				var productNo = document.URL.split("product/")[1];
+				if(productNo != undefined && productNo != ""){
+					if(productNo.indexOf("?") != -1){ //뒤에 파라미터가 있으면
+						productNo = productNo.split("?")[0];
+					}
+					var tempUrl = 'http://nm.boribori.co.kr/detail?productNo=' + productNo;
+					if(ptnerId != null && typeof ptnerId != 'undefined' && ptnerId != ""){
+						tempUrl += '&partnerid=' + ptnerId +'_m';
+					}
+					location.href = tempUrl;
+				}
+			} else if (document.URL.indexOf("deal/") != -1){ //PC주소로 딜페이지 들어왔을때
+				var dealNo = document.URL.split("deal/")[1];
+				if(dealNo != undefined && dealNo != ""){
+					if(dealNo.indexOf("?") != -1){ //뒤에 파라미터가 있으면
+						dealNo = dealNo.split("?")[0];
+					}
+					var tempUrl = 'http://nm.boribori.co.kr/s_detail?sdealPrdNo=' + dealNo;
+					if(ptnerId != null && typeof ptnerId && 'undefined' && ptnerId != ""){
+						tempUrl += '&partnerid=' + ptnerId +'_m';
+					}
+					location.href = tempUrl;
+				}
+			} else if (document.URL.indexOf("noReceive?") != -1){ //PC주소로 수신거부 페이지 들어왔을때
+				var params = document.URL.split("noReceive?")[1];
+				if(params != undefined && params != ""){
+					var tempUrl = 'http://nm.boribori.co.kr/noReceive?' + params;
+					location.href = tempUrl;
+				}
+			} else if (document.URL.indexOf("/best") != -1){ //PC주소로 베스트 들어왔을때
+				var params = document.URL.split("?")[1];
+				if(params != undefined && params != ""){
+					var paramList = params.split("&");
+					var tabNo = 1;
+					var daumProdNo = 0;
+					var category = 0;
+
+					if(paramList.length > 0)
+					{
+						for(var tempKey in paramList)
+						{
+							if(paramList[tempKey].split('=')[0] == 'tabNo')
+							{
+								tabNo = paramList[tempKey].split('=')[1];
+								tabNo++;
+							}
+							else if(paramList[tempKey].split('=')[0] == 'partnerid')
+							{
+								ptnerId = paramList[tempKey].split('=')[1];
+							}
+							else if(paramList[tempKey].split('=')[0] == 'daumProdNo')
+							{
+								daumProdNo = paramList[tempKey].split('=')[1];
+							}
+							else if(paramList[tempKey].split('=')[0] == 'categoryNo')
+							{
+								category = paramList[tempKey].split('=')[1];
+							}
+						}
+					}
+
+					var tempUrl ='http://nm.boribori.co.kr/home?cateType=D06600&tab='+tabNo+'&partnerid=';
+
+					if(category != 0){
+						tempUrl += '&category=' + category;
+					}
+
+					if(ptnerId != null && typeof ptnerId != 'undefined' && ptnerId != ""){
+						tempUrl += '&partnerid=' + ptnerId +'_m';
+					}
+
+					if(daumProdNo != 0){
+						tempUrl += '&daumProdNo=' + daumProdNo;
+					}
+
+					location.href = tempUrl;
+				}
+			} else if (document.URL.indexOf("search/") != -1){ //PC주소로 검색페이지 들어왔을때
+				var params = document.URL.split("search/")[1];
+				var params = document.URL.split("search/")[1] ? document.URL.split("search/")[1].replace('?','&') : '';
+				if(params != undefined && params != ""){
+					var tempUrl = 'http://nm.boribori.co.kr/search?keyword=' + params;
+					location.href = tempUrl;
+				}
+			} else{
+				if(document.referrer.indexOf("m.search.naver.com") != -1 || document.referrer.indexOf(".google.co") != -1){ //자사사이트에서 들어올 수 있기 때문에 조건을 걸어줘야함.
+					location.href = 'https://gate.boribori.co.kr/?site_cd=2&type=home&partnerid=b_borimw_mt';
+				} else {
+					location.href = 'https://nm.boribori.co.kr/';
+				}
+			}
+		}else{
+			// pc로 정상 진입이므로 유지
+		}
+
+		var nl = document.createElement('script');
+		nl.type = 'text/javascript';
+		nl.id = 'dataStoryTag';
+		nl.src = ('https:' == document.location.protocol ? 'https://' : 'http://') + 'static-s.halfclub.com/cdn_hp/components/logger/wl6.js';
+		var s = document.getElementsByTagName('script')[0];
+		s.parentNode.insertBefore(nl, s);
+		var done = false;
+		nl.onload = nl.onreadystatechange = function() {
+			console.log('******************************************** datastory intro index');
+			if ( !done && (!this.readyState || this.readyState === "loaded" || this.readyState === "complete") ) {
+				done = true;
+				if(typeof getCookie == 'function') {
+					if(getCookie("_partid_") != null) {
+						_n_m2 = decodeURIComponent(getCookie("_partid_"));
+					}
+				}
+				//n_logging();
+				accessLog(document.location.href, getCookie("PCID") != null ? getCookie("PCID") : '', getCookie("UID") != null ? getCookie("UID") : '', ptnerId);
+				n_common_logging(document.location.href, n_getReferrer(), document.title.toString());
+				//console.log("===datastory===");
+				nl.onload = nl.onreadystatechange = null;
+			}
+		}
+	})();
+</script>
+
+<!-- Google Tag Manager -->
+<script id="googleTagHeaderScript">(function(w,d,s,l,i){w[l]=w[l]||[];w[l].push({'gtm.start':
+            new Date().getTime(),event:'gtm.js'});var f=d.getElementsByTagName(s)[0],
+        j=d.createElement(s),dl=l!='dataLayer'?'&l='+l:'';j.async=true;j.src=
+        'https://www.googletagmanager.com/gtm.js?id='+i+dl;f.parentNode.insertBefore(j,f);
+})(window,document,'script','dataLayer','GTM-K4L5F5H');</script>
+<!-- End Google Tag Manager -->
+
+<link rel="shortcut icon" href="//static-s.halfclub.com/cdn_bp/favicon_br_32.ico" type="image/x-icon">
+<link rel="icon" href="//static-s.halfclub.com/cdn_bp/favicon_br_16.png" sizes="16x16">
+<link rel="icon" href="//static-s.halfclub.com/cdn_bp/favicon_br_32.png" sizes="32x32">
+<link rel="icon" href="//static-s.halfclub.com/cdn_bp/favicon_br_48.png" sizes="48x48">
+<link rel="icon" href="//static-s.halfclub.com/cdn_bp/favicon_br_64.png" sizes="64x64">
+
+<!-- sentry -->
+<script
+		src="https://browser.sentry-cdn.com/7.9.0/bundle.es5.min.js"
+		integrity="sha384-yOwRJUH0izSg7HN21nYCwe2eEE3BXGL7Su9gHowxpWBuE3yT0pYhp4RXAeLLPpwx"
+		crossorigin="anonymous"
+></script>
+
+<!-- If you include the integration it will be available under Sentry.Integrations.Angular -->
+<script
+		src="https://browser.sentry-cdn.com/6.19.7/angular.min.js"
+		crossorigin="anonymous"
+></script>
+
+<script
+		src="https://browser.sentry-cdn.com/7.9.0/bundle.tracing.es5.min.js"
+		integrity="sha384-HKgbaF6dwuJ913JK6qZvbnR4vjTpIJSm1WeXyDq277lUjfXKSsfmDcFikRzpaQtf"
+		crossorigin="anonymous"
+></script>
+
+<!-- 자바스크립트SDK 설정 SENTRY 사이트에서 가능 -->
+<script
+		src='https://js.sentry-cdn.com/b202a02a918a4086b16659bc95018b6e.min.js'
+		crossorigin="anonymous"
+></script>
+
+<script>
+	Sentry.init({
+		// Key
+		dsn: "https://b202a02a918a4086b16659bc95018b6e@o1294699.ingest.sentry.io/6520042",
+        // SDK 데이터 수 제한(기본:1000)
+		normalizeMaxBreadth : 19,
+		// Sentry에 전송하는 variable captured 수 제한 (기본:100)
+		maxBreadcrumbs : 3,
+		// 센트리에 애러 이벤트 전송 제한/ 발송이벤트는 랜덤으로 전송 (기본 1.0/ 100%)
+		sampleRate: 0.06,
+		// 특정애러무시
+		ignoreErrors: [
+			"sendCode_datastory",
+			"datastory",
+			"ds_element",
+		],
+		// 특정 URL 애러무시
+		ignoreUrls:[
+			/127\.0\.0\.1:4001\/isrunning/i,
+			/127\.0\.0\.1:8887\/isrunning/i,
+			/127\.0\.0\.1:8080\/isrunning/i,
+		],
+		// 통합환경, 라이브러리 사용을 위한설정
+		integrations: [
+			new Sentry.Integrations.Angular(),
+			new Sentry.BrowserTracing()],
+	});
+	// 센트리 프로그램 종료 5분뒤에
+	Sentry.close(300000).then(function() {
+		// 임시 비활성화 // 완전한 오류 수집을 멈추려면 init 주석처리하고 재배포해야함
+		console.log('Sentry Close')
+	});
+</script>
+<!-- End sentry -->
+
+<!--
+<link href="//static-s.halfclub.com/cdn_bp/components/assets/css/normalize.css" type="text/css" media="all" rel="stylesheet">
+<link href="//static-s.halfclub.com/cdn_bp/components/assets/css/swiper.min.css" type="text/css" media="all" rel="stylesheet">
+<link href="//static-s.halfclub.com/cdn_bp/components/assets/css/jquery.scrollbar.css" type="text/css" media="all" rel="stylesheet"> -->
+
+<!-- <link href="//static-s.halfclub.com/cdn_bp/components/assets/css/common.css" type="text/css" media="all" rel="stylesheet"> -->
+<link href="//static-s.halfclub.com/cdn_bp/components/assets/css/default.css?v=20221019" type="text/css" media="all" rel="stylesheet">
+
+<script type="text/javascript" src="//static-s.halfclub.com/cdn_bp/components/assets/js/jquery-3.3.1.min.js"></script>
+<script type="text/javascript" src="//static.nid.naver.com/js/naverLogin_implicit-1.0.3.js" async charset="utf-8"></script>
+<script type="text/javascript" src="//static-s.halfclub.com/cdn_hp/components/login/kakao.min.js"></script>
+<!--<script type="text/javascript" src="https://developers.kakao.com/sdk/js/kakao.min.js"></script>-->
+<!--<script type="text/javascript" src="https://t1.kakaocdn.net/kakao_js_sdk/v1/kakao.min.js"></script>-->
+<!--<script src="https://cdnjs.cloudflare.com/ajax/libs/crypto-js/3.1.2/rollups/aes.js"></script>-->
+<script src="//static-l.halfclub.com/cdn_bp/components/assets/js/sha256.js"></script>
+<script src="//static-l.halfclub.com/cdn_bp/components/assets/js/crypto-js.js"></script>
+<!--<script type="text/javascript" src="components/login/kakao.min.js"></script>-->
+<!-- 테스트 payco -->
+<!--<script src="https://testpay.kcp.co.kr/plugin/payplus_web.jsp"></script>-->
+<!-- 상용 payco -->
+<script src="https://pay.kcp.co.kr/plugin/payplus_web.jsp"></script>
+<!--v3.3.1-->
+
+<!--[if lt IE 9]><script type="text/javascript">document.createElement("header");document.createElement("nav");document.createElement("section");document.createElement("article");document.createElement("footer");</script><![endif]-->
+<style>
+.centered {
+  position: fixed;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  border:0px;
+  padding:0px;
+  margin:0px;
+  display: none;
+}
+input[type=text]::-ms-clear { display:none; }
+
+
+.sr_brand_box .list_type_brand .btn_like{display:inline-block;position:absolute;left:0;top:0;height:28px;}
+.sr_brand_box .list_type_brand .btn_like [class*=i_]{height:30px;}
+
+#lifeHead .lifeGnb .lifeGnbMenu { width:100%; }
+
+</style>
+
+<script src="//static-l.halfclub.com/cdn_bp/bower_components/angular/angular.min.js"></script>
+<script src="//static-l.halfclub.com/cdn_bp/bower_components/angular-ui-router/release/angular-ui-router.min.js"></script>
+<script src="//static-l.halfclub.com/cdn_bp/bower_components/angular-cookies/angular-cookies.js"></script>
+<script src="//static-l.halfclub.com/cdn_bp/bower_components/angularUtils-pagination/dirPagination.js"></script>
+<!--<script src="https://cdnjs.cloudflare.com/ajax/libs/danialfarid-angular-file-upload/12.2.13/ng-file-upload.js"></script>-->
+<!--<script src="https://cdnjs.cloudflare.com/ajax/libs/danialfarid-angular-file-upload/12.2.13/ng-file-upload-shim.js"></script>-->
+<script src="//static-l.halfclub.com/cdn_bp/bower_components/angular-sanitize/angular-sanitize.min.js"></script>
+<script src="//static-l.halfclub.com/cdn_bp/bower_components/infinite-scroll/ng-infinite-scroll.js"></script>
+<script src="//static-l.halfclub.com/cdn_bp/bower_components/angular-inview/3.0.0/angular-inview.js"></script>
+
+
+<script src="//static-s.halfclub.com/cdn_bp/app.js?v=202209021"></script>
+<script src="//static-s.halfclub.com/cdn_bp/app.common.js?v=20220213"></script>
+<script src="//static-s.halfclub.com/cdn_bp/app.route-config.js?v=022508"></script>
+<script src="//static-s.halfclub.com/cdn_bp/app.route-provider.js"></script>
+<script src="//static-s.halfclub.com/cdn_bp/app.constants.js?v=20220518"></script>
+
+<script src="//static-s.halfclub.com/cdn_bp/components/header/header.config.js?v=202210271"></script>
+<script src="//static-s.halfclub.com/cdn_bp/components/header/header.controller.js?v=20221107"></script>
+<script src="//static-s.halfclub.com/cdn_bp/components/header/header.service.js?v=20220511"></script>
+
+<script src="//static-s.halfclub.com/cdn_bp/components/footer/footer.config.js?v=20220808"></script>
+<script src="//static-s.halfclub.com/cdn_bp/components/footer/footer.controller.js"></script>
+<script src="//static-s.halfclub.com/cdn_bp/components/footer/footer.service.js"></script>
+
+<script src="//static-s.halfclub.com/cdn_bp/components/main/main.config.js?v=20220708"></script>
+<script src="//static-s.halfclub.com/cdn_bp/components/main/main.controller.js?v=20221019"></script>
+<script src="//static-s.halfclub.com/cdn_bp/components/main/main.service.js?v=20210716"></script>
+
+<script src="//static-s.halfclub.com/cdn_bp/components/brand/brand.config.js?v=20221025"></script>
+<script src="//static-s.halfclub.com/cdn_bp/components/brand/brand.controller.js?v=202210241"></script>
+<script src="//static-s.halfclub.com/cdn_bp/components/brand/brand_main.controller.js?v=20221026"></script>
+<script src="//static-s.halfclub.com/cdn_bp/components/brand/brand_popular.controller.js?v=20221025"></script>
+<script src="//static-s.halfclub.com/cdn_bp/components/brand/brand_category.controller.js"></script>
+<script src="//static-s.halfclub.com/cdn_bp/components/brand/brand_like.controller.js?v=20221025"></script>
+<script src="//static-s.halfclub.com/cdn_bp/components/brand/brand.service.js?v=20221026"></script>
+
+<script src="//static-s.halfclub.com/cdn_bp/components/login/login.config.js?v=202204288"></script>
+<script src="//static-s.halfclub.com/cdn_bp/components/login/login.controller.js?v=202211281"></script>
+<script src="//static-s.halfclub.com/cdn_bp/components/login/naverlogin.controller.js?v=202211291"></script>
+<script src="//static-s.halfclub.com/cdn_bp/components/login/login_no_member.controller.js?v=0228"></script>
+<script src="//static-s.halfclub.com/cdn_bp/components/login/login.service.js?v=20221128"></script>
+
+<script src="//static-s.halfclub.com/cdn_bp/components/member/member_join.config.js?v=20221012"></script>
+<script src="//static-s.halfclub.com/cdn_bp/components/member/member_join.controller.js?v=20221128"></script>
+<script src="//static-s.halfclub.com/cdn_bp/components/member/login_idpw_find.controller.js?v=20220114"></script>
+<script src="//static-s.halfclub.com/cdn_bp/components/member/member_join.service.js?v=20211223"></script>
+<script src="//static-s.halfclub.com/cdn_bp/components/member/login_idpw_find.service.js?v=20220114"></script>
+
+<script src="//static-s.halfclub.com/cdn_bp/components/customer/customer.config.js?v=20220808"></script>
+<script src="//static-s.halfclub.com/cdn_bp/components/customer/customer.controller.js?v=20221018"></script>
+<script src="//static-s.halfclub.com/cdn_bp/components/customer/customer_header.controller.js"></script>
+<script src="//static-s.halfclub.com/cdn_bp/components/customer/customer_header.service.js?v=20221125"></script>
+<script src="//static-s.halfclub.com/cdn_bp/components/customer/inquiryController.js?v=20220811"></script>
+<script src="//static-s.halfclub.com/cdn_bp/components/customer/customer.service.js"></script>
+
+<script src="//static-s.halfclub.com/cdn_bp/components/mypage/mypage.config.js?v=20220708"></script>
+<script src="//static-s.halfclub.com/cdn_bp/components/mypage/mypage.controller.js?v=20220514"></script>
+<script src="//static-s.halfclub.com/cdn_bp/components/mypage/mypage_info.controller.js?v=20220422"></script>
+<script src="//static-s.halfclub.com/cdn_bp/components/mypage/mypage_order_change.controller.js?v=20220706"></script>
+<script src="//static-s.halfclub.com/cdn_bp/components/mypage/mypage_change_return.controller.js"></script>
+<script src="//static-s.halfclub.com/cdn_bp/components/mypage/mypage_change_complete.controller.js"></script>
+<script src="//static-s.halfclub.com/cdn_bp/components/mypage/mypage_kid.controller.js?v=20220228"></script>
+<script src="//static-s.halfclub.com/cdn_bp/components/mypage/mypage.service.js?v=202203291"></script>
+<script src="//static-s.halfclub.com/cdn_bp/components/mypage/mypage_info.service.js?v=20210719"></script>
+
+<script src="//static-s.halfclub.com/cdn_bp/components/best/best.config.js?v=20220518"></script>
+<script src="//static-s.halfclub.com/cdn_bp/components/best/best.controller.js?v=20210319"></script>
+<script src="//static-s.halfclub.com/cdn_bp/components/best/best.service.js?v=20220329"></script>
+
+<script src="//static-s.halfclub.com/cdn_bp/components/category/category.config.js?v=20220902"></script>
+<script src="//static-s.halfclub.com/cdn_bp/components/category/category.controller.js?v=20220902"></script>
+<script src="//static-s.halfclub.com/cdn_bp/components/category/zone.controller.js?v=20220902"></script>
+<script src="//static-s.halfclub.com/cdn_bp/components/category/category.service.js?v=20210810"></script>
+
+<script src="//static-s.halfclub.com/cdn_bp/components/cart/cart.config.js?v=20211118"></script>
+<script src="//static-s.halfclub.com/cdn_bp/components/cart/cart_new.controller.js?v=20210812"></script>
+<script src="//static-s.halfclub.com/cdn_bp/components/cart/cart.service.js?v=20210811"></script>
+
+<script src="//static-s.halfclub.com/cdn_bp/components/payment/payment.config.js?v=20220408"></script>
+<script src="//static-s.halfclub.com/cdn_bp/components/payment/payment.controller.js?v=20221012"></script>
+<script src="//static-s.halfclub.com/cdn_bp/components/payment/payment_return.controller.js?v=0417"></script>
+<script src="//static-s.halfclub.com/cdn_bp/components/payment/payment.service.js?v=20210832"></script>
+
+<script src="//static-s.halfclub.com/cdn_bp/components/search/search.config.js?v=202210242"></script>
+<script src="//static-s.halfclub.com/cdn_bp/components/search/search.controller.js?v=20220729"></script>
+<script src="//static-s.halfclub.com/cdn_bp/components/search/search.service.js?v=20220631"></script>
+
+<script src="//static-s.halfclub.com/cdn_bp/components/partner/partner.config.js?v=20220808"></script>
+<script src="//static-s.halfclub.com/cdn_bp/components/partner/partner.controller.js?v=20221109"></script>
+<script src="//static-s.halfclub.com/cdn_bp/components/partner/partner.service.js"></script>
+
+<script src="//static-s.halfclub.com/cdn_bp/components/product/review.controller.js?v=20220902"></script>
+<script src="//static-s.halfclub.com/cdn_bp/components/product/productInquiry.controller.js?v=20210722"></script>
+<script src="//static-s.halfclub.com/cdn_bp/components/product/product.config.js?v=20221121"></script>
+<script src="//static-s.halfclub.com/cdn_bp/components/product/product.controller.js?v=202211291"></script>
+<script src="//static-s.halfclub.com/cdn_hp/components/product/product_partner.controller.js"></script>
+
+<script src="//static-s.halfclub.com/cdn_bp/components/product/product.service.js?v=20221021"></script>
+
+<script src="//static-s.halfclub.com/cdn_bp/components/event/event.config.js?v=20221117"></script>
+<script src="//static-s.halfclub.com/cdn_bp/components/event/event.controller.js?v=20221201"></script>
+<script src="//static-s.halfclub.com/cdn_bp/components/event/event.service.js?v=20221103"></script>
+
+<script src="//static-s.halfclub.com/cdn_bp/components/Affiliate/Affiliate.config.js?v=20220808"></script>
+<script src="//static-s.halfclub.com/cdn_bp/components/Affiliate/Affiliate.controller.js"></script>
+<script src="//static-s.halfclub.com/cdn_bp/components/Affiliate/noReceive.controller.js"></script>
+<script src="//static-s.halfclub.com/cdn_bp/components/Affiliate/Affililate.service.js"></script>
+
+<script src="//static-s.halfclub.com/cdn_bp/components/preview/preview.config.js?v=20220808"></script>
+<script src="//static-s.halfclub.com/cdn_bp/components/preview/preview.controller.js?v=20210303"></script>
+
+<script src="//static-s.halfclub.com/cdn_bp/components/logger/logger.js?v=20220515"></script>
+
+<script src="//static-l.halfclub.com/cdn_bp/components/assets/js/handlebars.min.js"></script>
+
+<!--서버에 배포시 아래 주석 해제 -->
+<base href="/">
+</head>
+<body ng-app="app" id="mainbody">
+<!-- Google Tag Manager (noscript) -->
+<noscript id="googleTagBodyScript"><iframe src="https://www.googletagmanager.com/ns.html?id=GTM-K4L5F5H"
+  height="0" width="0" style="display:none;visibility:hidden"></iframe></noscript>
+<!-- End Google Tag Manager (noscript) -->
+
+<div id="header_top">
+	<script type="text/javascript">
+		// url로 매출(제휴)코드 접근 검사
+		checkPartnerFromIndexByUrl();
+
+		// 신규게이트 호출
+		gatePageCheckByUrl();
+
+		// 매출(제휴)코드 플래그에 따라 제휴헤더 로드
+		writePartnerHeader();
+	</script>
+</div>
+<ng-include ng-show="$root.bShowFooter" src="'//www.boribori.co.kr/cdn_bp/components/header/topLine.html'" ></ng-include>
+	<ui-view></ui-view>
+<ng-include ng-show="$root.bShowFooter" id="footer" src="'//www.boribori.co.kr/cdn_bp/components/footer/footer.html'" ng-controller='FooterController' ></ng-include>
+
+<!--<div class="loading_bar" style="z-index:999;">
+	<span><img src="//static-s.halfclub.com/cdn_bp/components/assets/images/common/loading.gif"></span>
+</div>-->
+<div class="loading_spinner" style="z-index:999;"></div>
+</body>
+<!--<script src="http://dmaps.daum.net/map_js_init/postcode.v2.js?autoload=false"></script>-->
+<script src="//t1.daumcdn.net/mapjsapi/bundle/postcode/prod/postcode.v2.js" async></script>
+<script type="text/javascript" src="//static-l.halfclub.com/cdn_bp/components/assets/js/swiper.min.js"></script>
+<!--v4.4.6-->
+<script type="text/javascript" src="//static-l.halfclub.com/cdn_bp/components/assets/js/placeholders.min.js"></script>
+<!--v4.0.1-->
+<script type="text/javascript" src="//static-l.halfclub.com/cdn_bp/components/assets/js/jquery.scrollbar.min.js"></script>
+<script type="text/javascript" src="//static-s.halfclub.com/cdn_bp/components/assets/js/common.js?v=20220906"></script>
+<script type="text/javascript" src="//static-l.halfclub.com/cdn_bp/components/assets/js/zoom-image.js"></script>
+<script type="text/javascript" src="//static-l.halfclub.com/cdn_bp/components/assets/js/jquery.rating-stars.min.js"></script>
+<script src="//static-l.halfclub.com/cdn_bp/components/assets/js/iframe_api.js"></script>
+<script src="//static-l.halfclub.com/cdn_bp/bower_components/angular-youtube-mb/src/angular-youtube-embed.js"></script>
+
+<script>
+	// edge 이동
+	var agent = navigator.userAgent.toLowerCase(),
+	ieBrowser = /MSIE \d|Trident.*rv:/.test(navigator.userAgent);
+	//window10 = agent.includes('windows nt 10.0');
+	if(ieBrowser && (agent.indexOf('windows nt 10.0') > -1 || agent.indexOf('windows nt 6.2') > -1)){
+		if(ptnerId == 'naver_news')
+		{
+			/*var ssd = window.open('microsoft-edge:' + window.location, '_blank');
+			setTimeout(function(){
+				ssd.close();
+			}, 1000)*/
+		}
+		else
+		{
+			if(!getCookie('edgeMove'))
+			{
+				setTimeout(function () {
+					window.location = 'microsoft-edge:' + window.location;
+				}, 3000);
+				setTimeout(function () {
+					//window.location = 'https://go.microsoft.com/fwlink/?linkid=2135547';
+				}, 10);
+			}
+		}
+
+	}
+
+	// 신규 게이트 웨이
+	(function() {
+		var returnUrl = window.document.location.href;
+		var arrPage = ['planNo=', 'product/', 'deal/'];    // 기획전, 상세, 딜
+		var arrGateUrl = ['theme&p1=', 'detail_pcode&p1=', 'detail_scode&p1='];
+		var gateYn = 'N';	// Gate Redirections Y/N
+
+		for (var i = 0; i < arrPage.length; i++) {
+			if(returnUrl.indexOf(arrPage[i]) != -1){
+				var urlParam = returnUrl.split(arrPage[i])[1];
+				var urlParam2 = new URLSearchParams(urlParam);
+				var urlParam_site = urlParam2.get("site");
+
+				if(urlParam != undefined && urlParam != ""){
+					if(urlParam.indexOf("site=") != -1 && !parse_gSeq()){
+						returnUrl = 'https://gate.boribori.co.kr?site_cd=2&type=' + arrGateUrl[i] + urlParam.replace('?' , '&');
+						gateYn = 'Y';
+					}else if(urlParam.indexOf("site=") != -1 && parse_gSeq()){
+						$.ajax({
+							url: "https://gate.boribori.co.kr/gate?site_cd=2&type=front&site="+urlParam_site,
+							type:'GET',
+							async:true,
+							success:function(data){
+								gateYn = 'Y';
+							},
+							error:function(request, status, error){
+								console.log(error);
+							},
+						});
+					}
+				}
+			}
+		}
+	})();
+</script>
+
+</html>

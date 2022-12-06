@@ -1,0 +1,788 @@
+@import url(../../../css/fonts.css);
+@import url(../../../css/reset.css);
+@import url(../../../css/modal.css);
+@import url(../../../css/header.css);
+@import url(../../../css/footer.css);
+#main {
+  text-align: center;
+  font-size: 30px;
+  line-height: 200%;
+  height: auto;
+}
+#main #section1 {
+  width: 100%;
+  padding: 100px 0px;
+}
+#main #section1 .slide-container {
+  width: 1140px;
+  margin: 0 auto;
+}
+#main #section1 .slide-container .slide-view .slide-wrap .slide {
+  position: relative;
+  text-align: center;
+}
+#main #section2 .slide-container .slide-wrap {
+  width: 1140px;
+  position: relative;
+  margin: 0 auto;
+  display: flex;
+  justify-content: center;
+}
+#main #section2 .slide-container .slide-wrap .slide {
+  margin-top: 28px;
+  padding: 0 15px;
+  list-style: none;
+}
+#main #section2 .slide-container .slide-wrap .slide .gap a {
+  position: relative;
+  display: block;
+}
+#main #section2 .slide-container .slide-wrap .slide .gap a span {
+  width: 360px;
+  height: 220px;
+}
+#main #section2 .slide-container .slide-wrap .slide .gap a .imgtit {
+  background: rgba(255, 255, 255, 0.5);
+  color: #111;
+  position: absolute;
+  bottom: 0;
+  left: 0;
+  right: 0;
+  height: 80px;
+  padding: 18px 20px 0;
+  color: #fff;
+  line-height: 20px;
+  text-align: left;
+}
+#main #section2 .slide-container .slide-wrap .slide .gap a .imgtit strong {
+  height: 20px;
+  margin-bottom: 7px;
+  font-size: 18px;
+  font-weight: 700;
+}
+#main #section2 .slide-container .slide-wrap .slide .gap a .imgtit p {
+  height: 18px;
+  font-size: 14px;
+  line-height: 18px;
+}
+#main #section2 .slide-container .slide-wrap .slide {
+  margin-top: 28px;
+  padding: 0 15px;
+}
+#main #section2 .slide-container .slide-wrap .slide .gap a {
+  position: relative;
+  display: block;
+}
+#main #section2 .slide-container .slide-wrap .slide .gap a span {
+  width: 360px;
+  height: 220px;
+}
+#main #section2 .slide-container .slide-wrap .slide .gap a .imgtit strong {
+  height: 20px;
+  margin-bottom: 7px;
+  font-size: 18px;
+  font-weight: 700;
+}
+#main #section2 .slide-container .slide-wrap .slide .gap a .imgtit p {
+  height: 18px;
+  font-size: 14px;
+  line-height: 18px;
+}
+#main #section2 .slide-container .slide-wrap .slide {
+  margin-top: 28px;
+  padding: 0 15px;
+}
+#main #section2 .slide-container .slide-wrap .slide .gap a {
+  position: relative;
+  display: block;
+}
+#main #section2 .slide-container .slide-wrap .slide .gap a span {
+  width: 360px;
+  height: 220px;
+}
+#main #section2 .slide-container .slide-wrap .slide .gap a .imgtit {
+  background: rgba(0, 0, 0, 0.5);
+  color: #111;
+  position: absolute;
+  bottom: 0;
+  left: 0;
+  right: 0;
+  height: 80px;
+  padding: 18px 20px 0;
+  color: #fff;
+  line-height: 20px;
+  text-align: center;
+}
+#main #section2 .slide-container .slide-wrap .slide .gap a .imgtit strong {
+  height: 20px;
+  margin-bottom: 7px;
+  font-size: 18px;
+  font-weight: 700;
+}
+#main #section2 .slide-container .slide-wrap .slide .gap a .imgtit p {
+  height: 18px;
+  font-size: 14px;
+  line-height: 18px;
+}
+#main #section3 .slide-container .slide-wrap {
+  width: 1140px;
+  position: relative;
+  margin: 0 auto;
+  display: flex;
+  justify-content: center;
+}
+#main #section3 .slide-container .slide-wrap .slide {
+  margin-top: 28px;
+  padding: 0 15px;
+  list-style: none;
+}
+#main #section3 .slide-container .slide-wrap .slide .gap a {
+  position: relative;
+  display: block;
+}
+#main #section3 .slide-container .slide-wrap .slide .gap a span {
+  width: 360px;
+  height: 220px;
+}
+#main #section3 .slide-container .slide-wrap .slide .gap a .imgtit {
+  background: rgba(255, 255, 255, 0.5);
+  color: #111;
+  position: absolute;
+  bottom: 0;
+  left: 0;
+  right: 0;
+  height: 80px;
+  padding: 18px 20px 0;
+  color: #fff;
+  line-height: 20px;
+  text-align: left;
+}
+#main #section3 .slide-container .slide-wrap .slide .gap a .imgtit strong {
+  height: 20px;
+  margin-bottom: 7px;
+  font-size: 18px;
+  font-weight: 700;
+}
+#main #section3 .slide-container .slide-wrap .slide .gap a .imgtit p {
+  height: 18px;
+  font-size: 14px;
+  line-height: 18px;
+}
+#main #section3 .slide-container .slide-wrap .slide {
+  margin-top: 28px;
+  padding: 0 15px;
+}
+#main #section3 .slide-container .slide-wrap .slide .gap a {
+  position: relative;
+  display: block;
+}
+#main #section3 .slide-container .slide-wrap .slide .gap a span {
+  width: 360px;
+  height: 220px;
+}
+#main #section3 .slide-container .slide-wrap .slide .gap a .imgtit {
+  position: absolute;
+  height: 70px;
+  padding: 13px 10px 0;
+  color: #fff;
+  line-height: 20px;
+  text-align: center;
+  background: rgba(0, 0, 0, 0.5);
+  display: block;
+}
+#main #section3 .slide-container .slide-wrap .slide .gap a .imgtit strong {
+  height: 20px;
+  margin-bottom: 7px;
+  font-size: 18px;
+  font-weight: 700;
+}
+#main #section3 .slide-container .slide-wrap .slide .gap a .imgtit p {
+  height: 18px;
+  font-size: 14px;
+  line-height: 18px;
+}
+#main #section3 .slide-container .slide-wrap .slide {
+  margin-top: 28px;
+  padding: 0 15px;
+}
+#main #section3 .slide-container .slide-wrap .slide .gap a {
+  position: relative;
+  display: block;
+}
+#main #section3 .slide-container .slide-wrap .slide .gap a span {
+  width: 360px;
+  height: 220px;
+}
+#main #section3 .slide-container .slide-wrap .slide .gap a .imgtit {
+  position: absolute;
+  height: 70px;
+  padding: 13px 10px 0;
+  color: #fff;
+  line-height: 20px;
+  text-align: center;
+  background: rgba(0, 0, 0, 0.5);
+  display: block;
+}
+#main #section3 .slide-container .slide-wrap .slide .gap a .imgtit strong {
+  height: 20px;
+  margin-bottom: 7px;
+  font-size: 18px;
+  font-weight: 700;
+}
+#main #section3 .slide-container .slide-wrap .slide .gap a .imgtit p {
+  height: 18px;
+  font-size: 14px;
+  line-height: 18px;
+}
+#main #section4 .slide-container .slide-wrap {
+  width: 1140px;
+  position: relative;
+  margin: 0 auto;
+  display: flex;
+  justify-content: center;
+  margin-right: 550px;
+}
+#main #section4 .slide-container .slide-wrap .slide {
+  margin-top: 28px;
+  padding: 0 15px;
+  list-style: none;
+}
+#main #section4 .slide-container .slide-wrap .slide .gap a {
+  position: relative;
+  display: block;
+}
+#main #section4 .slide-container .slide-wrap .slide .gap a span {
+  width: 360px;
+  height: 220px;
+}
+#main #section4 .slide-container .slide-wrap .slide .gap a .imgtit {
+  background: rgba(0, 0, 0, 0.5);
+  position: absolute;
+  bottom: 0;
+  left: 0;
+  right: 0;
+  height: 80px;
+  padding: 18px 20px 0;
+  color: #fff;
+  line-height: 20px;
+  text-align: center;
+}
+#main #section4 .slide-container .slide-wrap .slide .gap a .imgtit strong {
+  height: 20px;
+  margin-bottom: 7px;
+  font-size: 18px;
+  font-weight: 700;
+}
+#main #section4 .slide-container .slide-wrap .slide .gap a .imgtit p {
+  height: 18px;
+  font-size: 14px;
+  line-height: 18px;
+}
+#main #section5 .slide-container .slide-wrap {
+  width: 1140px;
+  position: relative;
+  margin: 0 auto;
+  display: flex;
+  justify-content: center;
+}
+#main #section5 .slide-container .slide-wrap .slide {
+  margin-top: 28px;
+  padding: 0 15px;
+  list-style: none;
+}
+#main #section5 .slide-container .slide-wrap .slide .gap a {
+  position: relative;
+  display: block;
+}
+#main #section5 .slide-container .slide-wrap .slide .gap a span {
+  width: 360px;
+  height: 220px;
+}
+#main #section5 .slide-container .slide-wrap .slide .gap a .imgtit {
+  background: rgba(255, 255, 255, 0.5);
+  color: #111;
+  position: absolute;
+  bottom: 0;
+  left: 0;
+  right: 0;
+  height: 80px;
+  padding: 18px 20px 0;
+  color: #fff;
+  line-height: 20px;
+  text-align: left;
+}
+#main #section5 .slide-container .slide-wrap .slide .gap a .imgtit strong {
+  height: 20px;
+  margin-bottom: 7px;
+  font-size: 18px;
+  font-weight: 700;
+}
+#main #section5 .slide-container .slide-wrap .slide .gap a .imgtit p {
+  height: 18px;
+  font-size: 14px;
+  line-height: 18px;
+}
+#main #section5 .slide-container .slide-wrap .slide {
+  margin-top: 28px;
+  padding: 0 15px;
+}
+#main #section5 .slide-container .slide-wrap .slide .gap a {
+  position: relative;
+  display: block;
+}
+#main #section5 .slide-container .slide-wrap .slide .gap a span {
+  width: 360px;
+  height: 220px;
+}
+#main #section5 .slide-container .slide-wrap .slide .gap a .imgtit {
+  position: absolute;
+  height: 70px;
+  padding: 13px 10px 0;
+  color: #fff;
+  line-height: 20px;
+  text-align: center;
+  background: rgba(0, 0, 0, 0.5);
+  display: block;
+}
+#main #section5 .slide-container .slide-wrap .slide .gap a .imgtit strong {
+  height: 20px;
+  margin-bottom: 7px;
+  font-size: 18px;
+  font-weight: 700;
+}
+#main #section5 .slide-container .slide-wrap .slide .gap a .imgtit p {
+  height: 18px;
+  font-size: 14px;
+  line-height: 18px;
+}
+#main #section5 .slide-container .slide-wrap .slide {
+  margin-top: 28px;
+  padding: 0 15px;
+}
+#main #section5 .slide-container .slide-wrap .slide .gap a {
+  position: relative;
+  display: block;
+}
+#main #section5 .slide-container .slide-wrap .slide .gap a span {
+  width: 360px;
+  height: 220px;
+}
+#main #section5 .slide-container .slide-wrap .slide .gap a .imgtit {
+  position: absolute;
+  height: 70px;
+  padding: 13px 10px 0;
+  color: #fff;
+  line-height: 20px;
+  text-align: center;
+  background: rgba(0, 0, 0, 0.5);
+  display: block;
+}
+#main #section5 .slide-container .slide-wrap .slide .gap a .imgtit strong {
+  height: 20px;
+  margin-bottom: 7px;
+  font-size: 18px;
+  font-weight: 700;
+}
+#main #section5 .slide-container .slide-wrap .slide .gap a .imgtit p {
+  height: 18px;
+  font-size: 14px;
+  line-height: 18px;
+}
+#main #section6 .slide-container .slide-wrap {
+  width: 1140px;
+  position: relative;
+  margin: 0 auto;
+  display: flex;
+  justify-content: center;
+}
+#main #section6 .slide-container .slide-wrap .slide {
+  margin-top: 28px;
+  padding: 0 15px;
+  list-style: none;
+}
+#main #section6 .slide-container .slide-wrap .slide .gap a {
+  position: relative;
+  display: block;
+}
+#main #section6 .slide-container .slide-wrap .slide .gap a span {
+  width: 360px;
+  height: 220px;
+}
+#main #section6 .slide-container .slide-wrap .slide .gap a .imgtit {
+  background: rgba(255, 255, 255, 0.5);
+  color: #111;
+  position: absolute;
+  bottom: 0;
+  left: 0;
+  right: 0;
+  height: 80px;
+  padding: 18px 20px 0;
+  color: #fff;
+  line-height: 20px;
+  text-align: left;
+}
+#main #section6 .slide-container .slide-wrap .slide .gap a .imgtit strong {
+  height: 20px;
+  margin-bottom: 7px;
+  font-size: 18px;
+  font-weight: 700;
+}
+#main #section6 .slide-container .slide-wrap .slide .gap a .imgtit p {
+  height: 18px;
+  font-size: 14px;
+  line-height: 18px;
+}
+#main #section6 .slide-container .slide-wrap .slide {
+  margin-top: 28px;
+  padding: 0 15px;
+}
+#main #section6 .slide-container .slide-wrap .slide .gap a {
+  position: relative;
+  display: block;
+}
+#main #section6 .slide-container .slide-wrap .slide .gap a span {
+  width: 360px;
+  height: 220px;
+}
+#main #section6 .slide-container .slide-wrap .slide .gap a .imgtit {
+  position: absolute;
+  height: 70px;
+  padding: 13px 10px 0;
+  color: #fff;
+  line-height: 20px;
+  text-align: center;
+  background: rgba(0, 0, 0, 0.5);
+  display: block;
+}
+#main #section6 .slide-container .slide-wrap .slide .gap a .imgtit strong {
+  height: 20px;
+  margin-bottom: 7px;
+  font-size: 18px;
+  font-weight: 700;
+}
+#main #section6 .slide-container .slide-wrap .slide .gap a .imgtit p {
+  height: 18px;
+  font-size: 14px;
+  line-height: 18px;
+}
+#main #section6 .slide-container .slide-wrap .slide {
+  margin-top: 28px;
+  padding: 0 15px;
+}
+#main #section6 .slide-container .slide-wrap .slide .gap a {
+  position: relative;
+  display: block;
+}
+#main #section6 .slide-container .slide-wrap .slide .gap a span {
+  width: 360px;
+  height: 220px;
+}
+#main #section6 .slide-container .slide-wrap .slide .gap a .imgtit {
+  position: absolute;
+  height: 70px;
+  padding: 13px 10px 0;
+  color: #fff;
+  line-height: 20px;
+  text-align: center;
+  background: rgba(0, 0, 0, 0.5);
+  display: block;
+}
+#main #section6 .slide-container .slide-wrap .slide .gap a .imgtit strong {
+  height: 20px;
+  margin-bottom: 7px;
+  font-size: 18px;
+  font-weight: 700;
+}
+#main #section6 .slide-container .slide-wrap .slide .gap a .imgtit p {
+  height: 18px;
+  font-size: 14px;
+  line-height: 18px;
+}
+#main #section7 .slide-container .slide-wrap {
+  width: 1140px;
+  position: relative;
+  margin: 0 auto;
+  display: flex;
+  justify-content: center;
+}
+#main #section7 .slide-container .slide-wrap .slide {
+  margin-top: 28px;
+  padding: 0 15px;
+  list-style: none;
+}
+#main #section7 .slide-container .slide-wrap .slide .gap a {
+  position: relative;
+  display: block;
+}
+#main #section7 .slide-container .slide-wrap .slide .gap a span {
+  width: 360px;
+  height: 220px;
+}
+#main #section7 .slide-container .slide-wrap .slide .gap a .imgtit {
+  background: rgba(255, 255, 255, 0.5);
+  color: #111;
+  position: absolute;
+  bottom: 0;
+  left: 0;
+  right: 0;
+  height: 80px;
+  padding: 18px 20px 0;
+  color: #fff;
+  line-height: 20px;
+  text-align: left;
+}
+#main #section7 .slide-container .slide-wrap .slide .gap a .imgtit strong {
+  height: 20px;
+  margin-bottom: 7px;
+  font-size: 18px;
+  font-weight: 700;
+}
+#main #section7 .slide-container .slide-wrap .slide .gap a .imgtit p {
+  height: 18px;
+  font-size: 14px;
+  line-height: 18px;
+}
+#main #section7 .slide-container .slide-wrap .slide {
+  margin-top: 28px;
+  padding: 0 15px;
+}
+#main #section7 .slide-container .slide-wrap .slide .gap a {
+  position: relative;
+  display: block;
+}
+#main #section7 .slide-container .slide-wrap .slide .gap a span {
+  width: 360px;
+  height: 220px;
+}
+#main #section7 .slide-container .slide-wrap .slide .gap a .imgtit {
+  position: absolute;
+  height: 70px;
+  padding: 13px 10px 0;
+  color: #fff;
+  line-height: 20px;
+  text-align: center;
+  background: rgba(0, 0, 0, 0.5);
+  display: block;
+}
+#main #section7 .slide-container .slide-wrap .slide .gap a .imgtit strong {
+  height: 20px;
+  margin-bottom: 7px;
+  font-size: 18px;
+  font-weight: 700;
+}
+#main #section7 .slide-container .slide-wrap .slide .gap a .imgtit p {
+  height: 18px;
+  font-size: 14px;
+  line-height: 18px;
+}
+#main #section7 .slide-container .slide-wrap .slide {
+  margin-top: 28px;
+  padding: 0 15px;
+}
+#main #section7 .slide-container .slide-wrap .slide .gap a {
+  position: relative;
+  display: block;
+}
+#main #section7 .slide-container .slide-wrap .slide .gap a span {
+  width: 360px;
+  height: 220px;
+}
+#main #section7 .slide-container .slide-wrap .slide .gap a .imgtit {
+  position: absolute;
+  height: 70px;
+  padding: 13px 10px 0;
+  color: #fff;
+  line-height: 20px;
+  text-align: center;
+  background: rgba(0, 0, 0, 0.5);
+  display: block;
+}
+#main #section7 .slide-container .slide-wrap .slide .gap a .imgtit strong {
+  height: 20px;
+  margin-bottom: 7px;
+  font-size: 18px;
+  font-weight: 700;
+}
+#main #section7 .slide-container .slide-wrap .slide .gap a .imgtit p {
+  height: 18px;
+  font-size: 14px;
+  line-height: 18px;
+}
+#main #section8 .slide-container .slide-wrap {
+  width: 1140px;
+  position: relative;
+  margin: 0 auto;
+  display: flex;
+  justify-content: center;
+}
+#main #section8 .slide-container .slide-wrap .slide {
+  margin-top: 28px;
+  padding: 0 15px;
+  list-style: none;
+}
+#main #section8 .slide-container .slide-wrap .slide .gap a {
+  position: relative;
+  display: block;
+}
+#main #section8 .slide-container .slide-wrap .slide .gap a span {
+  width: 360px;
+  height: 220px;
+}
+#main #section8 .slide-container .slide-wrap .slide .gap a .imgtit {
+  background: rgba(255, 255, 255, 0.5);
+  color: #111;
+  position: absolute;
+  bottom: 0;
+  left: 0;
+  right: 0;
+  height: 80px;
+  padding: 18px 20px 0;
+  color: #fff;
+  line-height: 20px;
+  text-align: left;
+}
+#main #section8 .slide-container .slide-wrap .slide .gap a .imgtit strong {
+  height: 20px;
+  margin-bottom: 7px;
+  font-size: 18px;
+  font-weight: 700;
+}
+#main #section8 .slide-container .slide-wrap .slide .gap a .imgtit p {
+  height: 18px;
+  font-size: 14px;
+  line-height: 18px;
+}
+#main #section8 .slide-container .slide-wrap .slide {
+  margin-top: 28px;
+  padding: 0 15px;
+}
+#main #section8 .slide-container .slide-wrap .slide .gap a {
+  position: relative;
+  display: block;
+}
+#main #section8 .slide-container .slide-wrap .slide .gap a span {
+  width: 360px;
+  height: 220px;
+}
+#main #section8 .slide-container .slide-wrap .slide .gap a .imgtit {
+  position: absolute;
+  height: 70px;
+  padding: 13px 10px 0;
+  color: #fff;
+  line-height: 20px;
+  text-align: center;
+  background: rgba(0, 0, 0, 0.5);
+  display: block;
+}
+#main #section8 .slide-container .slide-wrap .slide .gap a .imgtit strong {
+  height: 20px;
+  margin-bottom: 7px;
+  font-size: 18px;
+  font-weight: 700;
+}
+#main #section8 .slide-container .slide-wrap .slide .gap a .imgtit p {
+  height: 18px;
+  font-size: 14px;
+  line-height: 18px;
+}
+#main #section8 .slide-container .slide-wrap .slide {
+  margin-top: 28px;
+  padding: 0 15px;
+}
+#main #section8 .slide-container .slide-wrap .slide .gap a {
+  position: relative;
+  display: block;
+}
+#main #section8 .slide-container .slide-wrap .slide .gap a span {
+  width: 360px;
+  height: 220px;
+}
+#main #section8 .slide-container .slide-wrap .slide .gap a .imgtit {
+  position: absolute;
+  height: 70px;
+  padding: 13px 10px 0;
+  color: #fff;
+  line-height: 20px;
+  text-align: center;
+  background: rgba(0, 0, 0, 0.5);
+  display: block;
+}
+#main #section8 .slide-container .slide-wrap .slide .gap a .imgtit strong {
+  height: 20px;
+  margin-bottom: 7px;
+  font-size: 18px;
+  font-weight: 700;
+}
+#main #section8 .slide-container .slide-wrap .slide .gap a .imgtit p {
+  height: 18px;
+  font-size: 14px;
+  line-height: 18px;
+}
+#main #section9 .slide-container .slide-wrap {
+  width: 1140px;
+  position: relative;
+  margin: 0 auto;
+  display: flex;
+  justify-content: center;
+  margin-left: -30px;
+}
+#main #section9 .slide-container .slide-wrap .slide {
+  margin-top: 28px;
+  padding: 0 15px;
+  list-style: none;
+}
+#main #section9 .slide-container .slide-wrap .slide .gap a {
+  position: relative;
+  display: block;
+}
+#main #section9 .slide-container .slide-wrap .slide .gap a span {
+  width: 360px;
+  height: 220px;
+}
+#main #section9 .slide-container .slide-wrap .slide .gap a .imgtit {
+  background: rgba(0, 0, 0, 0.5);
+  position: absolute;
+  bottom: 0;
+  left: 0;
+  right: 0;
+  height: 80px;
+  padding: 18px 20px 0;
+  color: #fff;
+  line-height: 20px;
+  text-align: center;
+}
+#main #section9 .slide-container .slide-wrap .slide .gap a .imgtit strong {
+  height: 20px;
+  margin-bottom: 7px;
+  font-size: 18px;
+  font-weight: 700;
+}
+#main #section9 .slide-container .slide-wrap .slide .gap a .imgtit p {
+  height: 18px;
+  font-size: 14px;
+  line-height: 18px;
+}
+#main #section10 {
+  width: 100%;
+  padding: 100px 0px;
+}
+#main #section10 .slide-container {
+  width: 1140px;
+  margin: 0 auto;
+}
+#main #section10 .slide-container .slide-view .slide-wrap .slide {
+  position: relative;
+  text-align: center;
+}
+#main #section11 {
+  width: 100%;
+  padding: 24px 0;
+}
+#main #section11 .slide-container {
+  width: 1140px;
+  margin: 0 auto;
+}
+#main #section11 .slide-container .slide-view .slide-wrap .slide {
+  position: relative;
+  text-align: center;
+}

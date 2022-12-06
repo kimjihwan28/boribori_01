@@ -1,0 +1,28 @@
+<?xml version="1.0" standalone="yes"?>
+<svg width="24" height="24">
+<path style="fill:#fbfeff; stroke:none;" d="M0 0L0 9L1 9L9 1L0 0z"/>
+<path style="fill:#998b8b; stroke:none;" d="M9 0L9 1L14 1L9 0z"/>
+<path style="fill:#fffdff; stroke:none;" d="M14 0L14 1C18.7188 2.60879 21.3912 5.28125 23 10L24 10L24 0L14 0z"/>
+<path style="fill:#876e2b; stroke:none;" d="M7 1L7 2L10 2L7 1z"/>
+<path style="fill:#ffce37; stroke:none;" d="M10.0008 1.61265C-3.7569 4.88511 1.20732 25.1339 14.9992 21.6821C27.6997 18.5035 22.7632 -1.42307 10.0008 1.61265z"/>
+<path style="fill:#876e2b; stroke:none;" d="M14 1L14 2L17 2L14 1z"/>
+<path style="fill:#c9ac4e; stroke:none;" d="M2 8L3 8L7 2L2 8z"/>
+<path style="fill:#7e6a52; stroke:none;" d="M17 2L20 4L17 2z"/>
+<path style="fill:#8a7546; stroke:none;" d="M21.3333 5.66667L21.6667 6.33333L21.3333 5.66667z"/>
+<path style="fill:#8a6d33; stroke:none;" d="M1 7L1 10L2 10L1 7z"/>
+<path style="fill:#fffdfa; stroke:none;" d="M9 15L4 10L9 18C14.3261 16.5505 18.5176 12.2778 20 7L9 15z"/>
+<path style="fill:#936e27; stroke:none;" d="M22 7L22 10L23 10L22 7z"/>
+<path style="fill:#c4bfbb; stroke:none;" d="M0.333333 9.66667L0.666667 10.3333L0.333333 9.66667z"/>
+<path style="fill:#998aa1; stroke:none;" d="M23 10L23 13L24 13L23 10z"/>
+<path style="fill:#8f917b; stroke:none;" d="M0.333333 11.6667L0.666667 12.3333L0.333333 11.6667z"/>
+<path style="fill:#fbffff; stroke:none;" d="M0 13L0 24L9 24L9 23L0 13z"/>
+<path style="fill:#fcffff; stroke:none;" d="M23 13C21.9383 18.2583 19.0501 21.2783 14 23L14 24L24 24L23 13z"/>
+<path style="fill:#836a42; stroke:none;" d="M1 14L1 17L2 17L1 14z"/>
+<path style="fill:#8f6e39; stroke:none;" d="M22 14L22 17L23 17L22 14z"/>
+<path style="fill:#948767; stroke:none;" d="M2 17L7 22L2 17z"/>
+<path style="fill:#847757; stroke:none;" d="M21 17L17 22L21 17z"/>
+<path style="fill:#6e5a27; stroke:none;" d="M7 22L7 23L10 23L7 22z"/>
+<path style="fill:#cbab30; stroke:none;" d="M10 22L10 23L14 23L10 22z"/>
+<path style="fill:#6e592c; stroke:none;" d="M14 22L14 23L17 23L14 22z"/>
+<path style="fill:#cdbdbe; stroke:none;" d="M9 23L9 24L14 24L9 23z"/>
+</svg>

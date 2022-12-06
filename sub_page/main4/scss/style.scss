@@ -1,0 +1,999 @@
+@import url(../../../css/fonts.css);
+@import url(../../../css/reset.css);
+@import url(../../../css/modal.css);
+@import url(../../../css/header.css);
+@import url(../../../css/footer.css);
+
+
+#main {
+   text-align: center;
+   font-size: 30px;
+   line-height: 200%;
+   height: auto;
+   #section1 {
+      width:100%;
+      padding: 100px 0px;
+      .slide-container {
+          width: 1140px;
+          margin: 0 auto;
+          .slide-view {
+              .slide-wrap{
+
+                  .slide {
+                      position: relative;
+                      text-align: center;
+                      
+                      .gap {
+                          
+                          a {
+                          h1 {
+
+                          }
+                          br {}
+                          h1 {}
+                          }
+                      }
+                  }
+              }
+          }
+      }
+  
+  }
+   #section2 {
+      .slide-container {
+         .slide-wrap {
+            width: 1140px;
+            position: relative;
+            margin: 0 auto;
+            display: flex;
+            justify-content: center;
+            .slide {
+                  margin-top: 28px;
+                  padding: 0 15px;
+                  list-style:none;
+                  .gap {
+                     a {
+                        position: relative;
+                        display: block;
+                        span {
+                              width: 360px;
+                              height: 220px;
+                              img {
+                                 
+                              }
+                        }
+                        .imgtit {
+                              background: rgba(255,255,255,.5);
+                              color: #111;
+                              position: absolute;
+                              bottom: 0;
+                              left: 0;
+                              right: 0;
+                              height: 80px;
+                              padding: 18px 20px 0;
+                              color: #fff;
+                              line-height: 20px;
+                              text-align: left;
+                              strong {
+                                 height: 20px;
+                                 margin-bottom: 7px;
+                                 font-size: 18px;
+                                 font-weight: 700;
+                              }
+                              p {
+                                 height: 18px;
+                                 font-size: 14px;
+                                 line-height: 18px;
+                              }
+                        }
+
+                     }
+                  }
+            }
+            .slide {
+                  margin-top: 28px;
+                  padding: 0 15px;
+                  .gap {
+                     a {
+                        position: relative;
+                        display: block;
+                        span {
+                              width: 360px;
+                              height: 220px;
+                              img {
+                                 
+                              }
+                        }
+                        .imgtit {
+
+                              strong {
+                                 height: 20px;
+                                 margin-bottom: 7px;
+                                 font-size: 18px;
+                                 font-weight: 700;
+                              }
+                              p {
+                                 height: 18px;
+                                 font-size: 14px;
+                                 line-height: 18px;
+                              }
+                        }
+
+                     }
+                  }
+            }
+            .slide {
+                  margin-top: 28px;
+                  padding: 0 15px;
+                  .gap {
+                     a {
+                        position: relative;
+                        display: block;
+                        span {
+                              width: 360px;
+                              height: 220px;
+                              img {
+                                 
+                              }
+                        }
+                        .imgtit {
+                              background: rgba(0, 0, 0, 0.5);
+                              color: #111;
+                              position: absolute;
+                              bottom: 0;
+                              left: 0;
+                              right: 0;
+                              height: 80px;
+                              padding: 18px 20px 0;
+                              color: #fff;
+                              line-height: 20px;
+                              text-align: center;
+                              strong {
+                                 height: 20px;
+                                 margin-bottom: 7px;
+                                 font-size: 18px;
+                                 font-weight: 700;
+                              }
+                              p {
+                                 height: 18px;
+                                 font-size: 14px;
+                                 line-height: 18px;
+                              }
+                        }
+
+                     }
+                  }
+            }
+         }
+      }
+      }
+   #section3 {
+         .slide-container {
+             .slide-wrap {
+                 width: 1140px;
+                 position: relative;
+                 margin: 0 auto;
+                 display: flex;
+                 justify-content: center;
+                 .slide {
+                     margin-top: 28px;
+                     padding: 0 15px;
+                     list-style:none;
+                     .gap {
+                         a {
+                             position: relative;
+                             display: block;
+                             span {
+                                 width: 360px;
+                                 height: 220px;
+                                 img {
+                                     
+                                 }
+                             }
+                             .imgtit {
+                                 background: rgba(255,255,255,.5);
+                                 color: #111;
+                                 position: absolute;
+                                 bottom: 0;
+                                 left: 0;
+                                 right: 0;
+                                 height: 80px;
+                                 padding: 18px 20px 0;
+                                 color: #fff;
+                                 line-height: 20px;
+                                 text-align: left;
+                             
+                                 strong {
+                                     height: 20px;
+                                     margin-bottom: 7px;
+                                     font-size: 18px;
+                                     font-weight: 700;
+                                 }
+                                 p {
+                                     height: 18px;
+                                     font-size: 14px;
+                                     line-height: 18px;
+                                 }
+                             }
+ 
+                         }
+                     }
+                 }
+                 .slide {
+                     margin-top: 28px;
+                     padding: 0 15px;
+                     .gap {
+                         a {
+                             position: relative;
+                             display: block;
+                             span {
+                                 width: 360px;
+                                 height: 220px;
+                                 img {
+                                     
+                                 }
+                             }
+                             .imgtit {
+                                 position: absolute;
+                                 height: 70px;
+                                 padding: 13px 10px 0;
+                                 color: #fff;
+                                 line-height: 20px;
+                                 text-align: center;
+                                 background: rgba(0,0,0,.5);
+                                 display: block;
+                                 strong {
+                                     height: 20px;
+                                     margin-bottom: 7px;
+                                     font-size: 18px;
+                                     font-weight: 700;
+                                 }
+                                 p {
+                                     height: 18px;
+                                     font-size: 14px;
+                                     line-height: 18px;
+                                 }
+                             }
+ 
+                         }
+                     }
+                 }
+                 .slide {
+                     margin-top: 28px;
+                     padding: 0 15px;
+                     .gap {
+                         a {
+                             position: relative;
+                             display: block;
+                             span {
+                                 width: 360px;
+                                 height: 220px;
+                                 img {
+                                     
+                                 }
+                             }
+                             .imgtit {
+                                 position: absolute;
+                                 height: 70px;
+                                 padding: 13px 10px 0;
+                                 color: #fff;
+                                 line-height: 20px;
+                                 text-align: center;
+                                 background: rgba(0,0,0,.5);
+                                 display: block;
+                                 strong {
+                                     height: 20px;
+                                     margin-bottom: 7px;
+                                     font-size: 18px;
+                                     font-weight: 700;
+                                 }
+                                 p {
+                                     height: 18px;
+                                     font-size: 14px;
+                                     line-height: 18px;
+                                 }
+                             }
+ 
+                         }
+                     }
+                 }
+             }
+         }
+     }
+   #section4 {
+         .slide-container {
+             .slide-wrap {
+                 width: 1140px;
+                 position: relative;
+                 margin: 0 auto;
+                 display: flex;
+                 justify-content: center;
+                 margin-right: 550px;
+                 .slide {
+                     margin-top: 28px;
+                     padding: 0 15px;
+                     list-style:none;
+                     .gap {
+                         a {
+                             position: relative;
+                             display: block;
+                             
+                             span {
+                                 width: 360px;
+                                 height: 220px;
+                                 
+                                 img {
+                                     
+                                 }
+                             }
+                             .imgtit {
+                                 background: rgba(0, 0, 0, 0.5);
+                                 position: absolute;
+                                 bottom: 0;
+                                 left: 0;
+                                 right: 0;
+                                 height: 80px;
+                                 padding: 18px 20px 0;
+                                 color: #fff;
+                                 line-height: 20px;
+                                 text-align: center;
+                                 strong {
+                                     height: 20px;
+                                     margin-bottom: 7px;
+                                     font-size: 18px;
+                                     font-weight: 700;
+                                 }
+                                 p {
+                                     height: 18px;
+                                     font-size: 14px;
+                                     line-height: 18px;
+                                 }
+                             }
+ 
+                         }
+                     }
+                 }
+             }
+         }
+     }
+     #section5 {
+      .slide-container {
+          .slide-wrap {
+              width: 1140px;
+              position: relative;
+              margin: 0 auto;
+              display: flex;
+              justify-content: center;
+              .slide {
+                  margin-top: 28px;
+                  padding: 0 15px;
+                  list-style:none;
+                  .gap {
+                      a {
+                          position: relative;
+                          display: block;
+                          span {
+                              width: 360px;
+                              height: 220px;
+                              img {
+                                  
+                              }
+                          }
+                          .imgtit {
+                              background: rgba(255,255,255,.5);
+                              color: #111;
+                              position: absolute;
+                              bottom: 0;
+                              left: 0;
+                              right: 0;
+                              height: 80px;
+                              padding: 18px 20px 0;
+                              color: #fff;
+                              line-height: 20px;
+                              text-align: left;
+                          
+                              strong {
+                                  height: 20px;
+                                  margin-bottom: 7px;
+                                  font-size: 18px;
+                                  font-weight: 700;
+                              }
+                              p {
+                                  height: 18px;
+                                  font-size: 14px;
+                                  line-height: 18px;
+                              }
+                          }
+
+                      }
+                  }
+              }
+              .slide {
+                  margin-top: 28px;
+                  padding: 0 15px;
+                  .gap {
+                      a {
+                          position: relative;
+                          display: block;
+                          span {
+                              width: 360px;
+                              height: 220px;
+                              img {
+                                  
+                              }
+                          }
+                          .imgtit {
+                              position: absolute;
+                              height: 70px;
+                              padding: 13px 10px 0;
+                              color: #fff;
+                              line-height: 20px;
+                              text-align: center;
+                              background: rgba(0,0,0,.5);
+                              display: block;
+                              strong {
+                                  height: 20px;
+                                  margin-bottom: 7px;
+                                  font-size: 18px;
+                                  font-weight: 700;
+                              }
+                              p {
+                                  height: 18px;
+                                  font-size: 14px;
+                                  line-height: 18px;
+                              }
+                          }
+
+                      }
+                  }
+              }
+              .slide {
+                  margin-top: 28px;
+                  padding: 0 15px;
+                  .gap {
+                      a {
+                          position: relative;
+                          display: block;
+                          span {
+                              width: 360px;
+                              height: 220px;
+                              img {
+                                  
+                              }
+                          }
+                          .imgtit {
+                              position: absolute;
+                              height: 70px;
+                              padding: 13px 10px 0;
+                              color: #fff;
+                              line-height: 20px;
+                              text-align: center;
+                              background: rgba(0,0,0,.5);
+                              display: block;
+                              strong {
+                                  height: 20px;
+                                  margin-bottom: 7px;
+                                  font-size: 18px;
+                                  font-weight: 700;
+                              }
+                              p {
+                                  height: 18px;
+                                  font-size: 14px;
+                                  line-height: 18px;
+                              }
+                          }
+
+                      }
+                  }
+              }
+          }
+      }
+  }
+     #section6 {
+      .slide-container {
+          .slide-wrap {
+              width: 1140px;
+              position: relative;
+              margin: 0 auto;
+              display: flex;
+              justify-content: center;
+              .slide {
+                  margin-top: 28px;
+                  padding: 0 15px;
+                  list-style:none;
+                  .gap {
+                      a {
+                          position: relative;
+                          display: block;
+                          span {
+                              width: 360px;
+                              height: 220px;
+                              img {
+                                  
+                              }
+                          }
+                          .imgtit {
+                              background: rgba(255,255,255,.5);
+                              color: #111;
+                              position: absolute;
+                              bottom: 0;
+                              left: 0;
+                              right: 0;
+                              height: 80px;
+                              padding: 18px 20px 0;
+                              color: #fff;
+                              line-height: 20px;
+                              text-align: left;
+                          
+                              strong {
+                                  height: 20px;
+                                  margin-bottom: 7px;
+                                  font-size: 18px;
+                                  font-weight: 700;
+                              }
+                              p {
+                                  height: 18px;
+                                  font-size: 14px;
+                                  line-height: 18px;
+                              }
+                          }
+
+                      }
+                  }
+              }
+              .slide {
+                  margin-top: 28px;
+                  padding: 0 15px;
+                  .gap {
+                      a {
+                          position: relative;
+                          display: block;
+                          span {
+                              width: 360px;
+                              height: 220px;
+                              img {
+                                  
+                              }
+                          }
+                          .imgtit {
+                              position: absolute;
+                              height: 70px;
+                              padding: 13px 10px 0;
+                              color: #fff;
+                              line-height: 20px;
+                              text-align: center;
+                              background: rgba(0,0,0,.5);
+                              display: block;
+                              strong {
+                                  height: 20px;
+                                  margin-bottom: 7px;
+                                  font-size: 18px;
+                                  font-weight: 700;
+                              }
+                              p {
+                                  height: 18px;
+                                  font-size: 14px;
+                                  line-height: 18px;
+                              }
+                          }
+
+                      }
+                  }
+              }
+              .slide {
+                  margin-top: 28px;
+                  padding: 0 15px;
+                  .gap {
+                      a {
+                          position: relative;
+                          display: block;
+                          span {
+                              width: 360px;
+                              height: 220px;
+                              img {
+                                  
+                              }
+                          }
+                          .imgtit {
+                              position: absolute;
+                              height: 70px;
+                              padding: 13px 10px 0;
+                              color: #fff;
+                              line-height: 20px;
+                              text-align: center;
+                              background: rgba(0,0,0,.5);
+                              display: block;
+                              strong {
+                                  height: 20px;
+                                  margin-bottom: 7px;
+                                  font-size: 18px;
+                                  font-weight: 700;
+                              }
+                              p {
+                                  height: 18px;
+                                  font-size: 14px;
+                                  line-height: 18px;
+                              }
+                          }
+
+                      }
+                  }
+              }
+          }
+      }
+  }
+     #section7 {
+      .slide-container {
+          .slide-wrap {
+              width: 1140px;
+              position: relative;
+              margin: 0 auto;
+              display: flex;
+              justify-content: center;
+              .slide {
+                  margin-top: 28px;
+                  padding: 0 15px;
+                  list-style:none;
+                  .gap {
+                      a {
+                          position: relative;
+                          display: block;
+                          span {
+                              width: 360px;
+                              height: 220px;
+                              img {
+                                  
+                              }
+                          }
+                          .imgtit {
+                              background: rgba(255,255,255,.5);
+                              color: #111;
+                              position: absolute;
+                              bottom: 0;
+                              left: 0;
+                              right: 0;
+                              height: 80px;
+                              padding: 18px 20px 0;
+                              color: #fff;
+                              line-height: 20px;
+                              text-align: left;
+                          
+                              strong {
+                                  height: 20px;
+                                  margin-bottom: 7px;
+                                  font-size: 18px;
+                                  font-weight: 700;
+                              }
+                              p {
+                                  height: 18px;
+                                  font-size: 14px;
+                                  line-height: 18px;
+                              }
+                          }
+
+                      }
+                  }
+              }
+              .slide {
+                  margin-top: 28px;
+                  padding: 0 15px;
+                  .gap {
+                      a {
+                          position: relative;
+                          display: block;
+                          span {
+                              width: 360px;
+                              height: 220px;
+                              img {
+                                  
+                              }
+                          }
+                          .imgtit {
+                              position: absolute;
+                              height: 70px;
+                              padding: 13px 10px 0;
+                              color: #fff;
+                              line-height: 20px;
+                              text-align: center;
+                              background: rgba(0,0,0,.5);
+                              display: block;
+                              strong {
+                                  height: 20px;
+                                  margin-bottom: 7px;
+                                  font-size: 18px;
+                                  font-weight: 700;
+                              }
+                              p {
+                                  height: 18px;
+                                  font-size: 14px;
+                                  line-height: 18px;
+                              }
+                          }
+
+                      }
+                  }
+              }
+              .slide {
+                  margin-top: 28px;
+                  padding: 0 15px;
+                  .gap {
+                      a {
+                          position: relative;
+                          display: block;
+                          span {
+                              width: 360px;
+                              height: 220px;
+                              img {
+                                  
+                              }
+                          }
+                          .imgtit {
+                              position: absolute;
+                              height: 70px;
+                              padding: 13px 10px 0;
+                              color: #fff;
+                              line-height: 20px;
+                              text-align: center;
+                              background: rgba(0,0,0,.5);
+                              display: block;
+                              strong {
+                                  height: 20px;
+                                  margin-bottom: 7px;
+                                  font-size: 18px;
+                                  font-weight: 700;
+                              }
+                              p {
+                                  height: 18px;
+                                  font-size: 14px;
+                                  line-height: 18px;
+                              }
+                          }
+
+                      }
+                  }
+              }
+          }
+      }
+  }
+     #section8 {
+      .slide-container {
+          .slide-wrap {
+              width: 1140px;
+              position: relative;
+              margin: 0 auto;
+              display: flex;
+              justify-content: center;
+              .slide {
+                  margin-top: 28px;
+                  padding: 0 15px;
+                  list-style:none;
+                  .gap {
+                      a {
+                          position: relative;
+                          display: block;
+                          span {
+                              width: 360px;
+                              height: 220px;
+                              img {
+                                  
+                              }
+                          }
+                          .imgtit {
+                              background: rgba(255,255,255,.5);
+                              color: #111;
+                              position: absolute;
+                              bottom: 0;
+                              left: 0;
+                              right: 0;
+                              height: 80px;
+                              padding: 18px 20px 0;
+                              color: #fff;
+                              line-height: 20px;
+                              text-align: left;
+                          
+                              strong {
+                                  height: 20px;
+                                  margin-bottom: 7px;
+                                  font-size: 18px;
+                                  font-weight: 700;
+                              }
+                              p {
+                                  height: 18px;
+                                  font-size: 14px;
+                                  line-height: 18px;
+                              }
+                          }
+
+                      }
+                  }
+              }
+              .slide {
+                  margin-top: 28px;
+                  padding: 0 15px;
+                  .gap {
+                      a {
+                          position: relative;
+                          display: block;
+                          span {
+                              width: 360px;
+                              height: 220px;
+                              img {
+                                  
+                              }
+                          }
+                          .imgtit {
+                              position: absolute;
+                              height: 70px;
+                              padding: 13px 10px 0;
+                              color: #fff;
+                              line-height: 20px;
+                              text-align: center;
+                              background: rgba(0,0,0,.5);
+                              display: block;
+                              strong {
+                                  height: 20px;
+                                  margin-bottom: 7px;
+                                  font-size: 18px;
+                                  font-weight: 700;
+                              }
+                              p {
+                                  height: 18px;
+                                  font-size: 14px;
+                                  line-height: 18px;
+                              }
+                          }
+
+                      }
+                  }
+              }
+              .slide {
+                  margin-top: 28px;
+                  padding: 0 15px;
+                  .gap {
+                      a {
+                          position: relative;
+                          display: block;
+                          span {
+                              width: 360px;
+                              height: 220px;
+                              img {
+                                  
+                              }
+                          }
+                          .imgtit {
+                              position: absolute;
+                              height: 70px;
+                              padding: 13px 10px 0;
+                              color: #fff;
+                              line-height: 20px;
+                              text-align: center;
+                              background: rgba(0,0,0,.5);
+                              display: block;
+                              strong {
+                                  height: 20px;
+                                  margin-bottom: 7px;
+                                  font-size: 18px;
+                                  font-weight: 700;
+                              }
+                              p {
+                                  height: 18px;
+                                  font-size: 14px;
+                                  line-height: 18px;
+                              }
+                          }
+
+                      }
+                  }
+              }
+          }
+      }
+  }
+  #section9 {
+   .slide-container {
+       .slide-wrap {
+           width: 1140px;
+           position: relative;
+           margin: 0 auto;
+           display: flex;
+           justify-content: center;
+           margin-left: -30px;
+           .slide {
+               margin-top: 28px;
+               padding: 0 15px;
+               list-style:none;
+               .gap {
+                   a {
+                       position: relative;
+                       display: block;
+                       
+                       span {
+                           width: 360px;
+                           height: 220px;
+                           
+                           img {
+                               
+                           }
+                       }
+                       .imgtit {
+                           background: rgba(0, 0, 0, 0.5);
+                           position: absolute;
+                           bottom: 0;
+                           left: 0;
+                           right: 0;
+                           height: 80px;
+                           padding: 18px 20px 0;
+                           color: #fff;
+                           line-height: 20px;
+                           text-align: center;
+                           strong {
+                               height: 20px;
+                               margin-bottom: 7px;
+                               font-size: 18px;
+                               font-weight: 700;
+                           }
+                           p {
+                               height: 18px;
+                               font-size: 14px;
+                               line-height: 18px;
+                           }
+                       }
+
+                   }
+               }
+           }
+       }
+   }
+}
+#section10 {
+   width:100%;
+   padding: 100px 0px;
+   .slide-container {
+       width: 1140px;
+       margin: 0 auto;
+       .slide-view {
+           .slide-wrap{
+
+               .slide {
+                   position: relative;
+                   text-align: center;
+                   .gap {
+                       
+                       a {
+                       h1 {
+
+                       }
+                       br {}
+                       h1 {}
+                       }
+                   }
+               }
+           }
+       }
+   }
+
+}
+#section11 {
+   width:100%;
+   padding: 24px 0;
+.slide-container {
+width: 1140px;
+margin: 0 auto;
+.slide-view {
+   .slide-wrap {
+       .slide {
+           position: relative;
+           text-align: center;
+           .gap {
+               a {
+                   h1 {}
+                   br {}
+                   h1 {}
+               }
+           }
+       }
+   }
+}
+}
+}
+
+}
